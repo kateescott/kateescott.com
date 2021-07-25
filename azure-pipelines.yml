@@ -1,0 +1,55 @@
+trigger:
+- master
+
+pool:
+  vmImage: ubuntu-latest
+
+jobs:
+  - job: build
+    steps:
+    - task: UseRubyVersion@0
+      inputs:
+        versionSpec: '>= 2.4'
+    - script: |
+        bundle install
+      displayName: 'Install Dependencies'
+    - script: |
+        bundle exec jekyll build
+      displayName: 'Jekyll Build'
+    - script: |
+        bundle exec htmlproofer --empty-alt-ignore --disable-external ./_site
+      displayName: 'HTML Proofer'
+    - task: PublishPipelineArtifact@1
+      inputs:
+        targetPath: '_site'
+        artifact: 'site'
+        publishLocation: 'pipeline'
+  - job: deploy
+    dependsOn:
+      - build
+    condition: equals(eq(variables['Build.SourceBranch'], 'master'))
+    steps:
+      - script: |
+          git worktree add gh-pages gh-pages
+        displayName: "Setup gh-pages worktree"
+      - task: DownloadBuildArtifacts@0
+        inputs:
+          buildType: 'current'
+          downloadType: 'single'
+          artifactName: 'site'
+          downloadPath: 'gh-pages'
+      - task: DownloadSecureFile@1
+        inputs:
+          secureFile: 'deploy_key'
+      - script: |
+          mkdir ~/.ssh && mv $DOWNLOADSECUREFILE_SECUREFILEPATH ~/.ssh/id_rsa
+          chmod 700 ~/.ssh && chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
+          git config --local user.name "Azure Pipelines"
+          git config --local user.email "azuredevops@microsoft.com"
+        displayName: 'Setup Deploy Environment'
+      - script: |
+          git add -A
+          git commit -m "$(Build.SourceVersionMessage)"
+          git push origin gh-pages
+        workingDirectory: 'gh-pages'
