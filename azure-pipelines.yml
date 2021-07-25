@@ -22,9 +22,10 @@ jobs:
     - script: |
         bundle exec htmlproofer --empty-alt-ignore --disable-external ./_site
       displayName: 'HTML Proofer'
+    - script: tar -cvzf "$(System.ArtifactsDirectory)/site.tar.gz" _site/
+      displayName: "Compress Artifacts"
     - task: PublishPipelineArtifact@1
       inputs:
-        targetPath: '_site'
         artifact: 'site'
         publishLocation: 'pipeline'
   - job: deploy
@@ -40,7 +41,6 @@ jobs:
           buildType: 'current'
           downloadType: 'single'
           artifactName: 'site'
-          downloadPath: '$(System.ArtifactsDirectory)'
       - task: DownloadSecureFile@1
         inputs:
           secureFile: 'deploy_key'
@@ -54,10 +54,10 @@ jobs:
         displayName: 'Setup Deploy Environment'
       - script: |
           set -eux
-          find . \! -name '.git' -delete
           echo "$(System.ArtifactsDirectory)"
           find "$(System.ArtifactsDirectory)"
-          cp -r $(System.ArtifactsDirectory)/_site/{.*,*} .
+          find . \! -name '.git' -delete
+          tar -xvf "$(System.ArtifactsDirectory)/site.tar.gz" -C gh-pages  --strip-components 1
           git status
           git add -A
           git commit -m "$(Build.SourceVersionMessage)"
