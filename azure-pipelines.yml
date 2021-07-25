@@ -1,5 +1,7 @@
 trigger:
-- master
+  branches:
+    include:
+      - master
 
 pool:
   vmImage: ubuntu-latest
@@ -38,6 +40,7 @@ jobs:
           buildType: 'current'
           downloadType: 'single'
           artifactName: 'site'
+          downloadPath: '$(System.ArtifactsDirectory)'
       - task: DownloadSecureFile@1
         inputs:
           secureFile: 'deploy_key'
@@ -50,8 +53,10 @@ jobs:
           git remote set-url origin git@github.com:kateescott/kateescott.com.git
         displayName: 'Setup Deploy Environment'
       - script: |
+          set -eux
           find . \! -name '.git' -delete
-          find $(System.ArtifactsDirectory)
+          echo "$(System.ArtifactsDirectory)"
+          find "$(System.ArtifactsDirectory)"
           cp -r $(System.ArtifactsDirectory)/_site/{.*,*} .
           git status
           git add -A
