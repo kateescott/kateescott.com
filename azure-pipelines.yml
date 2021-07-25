@@ -50,7 +50,10 @@ jobs:
           git remote set-url origin git@github.com:kateescott/kateescott.com.git
         displayName: 'Setup Deploy Environment'
       - script: |
+          find . \! -name '.git' -delete
+          find $(System.ArtifactsDirectory)
           cp -r $(System.ArtifactsDirectory)/_site/{.*,*} .
+          git status
           git add -A
           git commit -m "$(Build.SourceVersionMessage)"
           git push origin gh-pages
