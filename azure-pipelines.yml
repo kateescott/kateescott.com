@@ -59,7 +59,7 @@ jobs:
           echo "$(System.ArtifactsDirectory)"
           find "$(System.ArtifactsDirectory)"
           find . \! -name '.git' -delete
-          tar -xvf "$(System.ArtifactsDirectory)/site.tar.gz" -C gh-pages  --strip-components 1
+          tar -xvf "$(System.ArtifactsDirectory)/site_archive/site.tar.gz" -C gh-pages  --strip-components 1
           git status
           git add -A
           git commit -m "$(Build.SourceVersionMessage)"
