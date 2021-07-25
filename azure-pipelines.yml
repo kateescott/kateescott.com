@@ -27,7 +27,7 @@ jobs:
   - job: deploy
     dependsOn:
       - build
-    condition: equals(eq(variables['Build.SourceBranch'], 'master'))
+    condition: eq(variables['Build.SourceBranch'], 'master')
     steps:
       - script: |
           git worktree add gh-pages gh-pages
