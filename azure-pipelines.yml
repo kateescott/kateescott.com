@@ -11,6 +11,7 @@ jobs:
       inputs:
         versionSpec: '~>2.6'
     - script: |
+        gem install bundler
         bundle install
       displayName: 'Install Dependencies'
     - script: |
