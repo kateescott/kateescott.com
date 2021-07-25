@@ -26,7 +26,8 @@ jobs:
       displayName: "Compress Artifacts"
     - task: PublishPipelineArtifact@1
       inputs:
-        artifact: 'site'
+        targetPath: '$(Pipeline.Workspace)/site.tar.gz'
+        artifact: 'site_archive'
         publishLocation: 'pipeline'
   - job: deploy
     dependsOn:
@@ -39,8 +40,9 @@ jobs:
       - task: DownloadBuildArtifacts@0
         inputs:
           buildType: 'current'
-          downloadType: 'single'
-          artifactName: 'site'
+          downloadType: 'specific'
+          itemPattern: 'site.tar.gz'
+          downloadPath: '$(System.ArtifactsDirectory)'
       - task: DownloadSecureFile@1
         inputs:
           secureFile: 'deploy_key'
