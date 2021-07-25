@@ -48,9 +48,13 @@ jobs:
           ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
           git config --local user.name "Azure Pipelines"
           git config --local user.email "azuredevops@microsoft.com"
+          git remote set-url origin git@github.com:kateescott/kateescott.com.git
         displayName: 'Setup Deploy Environment'
       - script: |
           git add -A
           git commit -m "$(Build.SourceVersionMessage)"
           git push origin gh-pages
         workingDirectory: 'gh-pages'
+      - script: |
+          rm ~/.ssh/id_rsa
+        displayName: 'Cleanup Deploy Environment'
