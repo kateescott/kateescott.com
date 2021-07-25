@@ -40,8 +40,8 @@ jobs:
       - task: DownloadBuildArtifacts@0
         inputs:
           buildType: 'current'
-          downloadType: 'specific'
-          itemPattern: 'site.tar.gz'
+          downloadType: 'single'
+          artifactName: 'site_archive'
           downloadPath: '$(System.ArtifactsDirectory)'
       - task: DownloadSecureFile@1
         inputs:
