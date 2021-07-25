@@ -22,7 +22,7 @@ jobs:
     - script: |
         bundle exec htmlproofer --empty-alt-ignore --disable-external ./_site
       displayName: 'HTML Proofer'
-    - script: tar -cvzf "$(System.ArtifactsDirectory)/site.tar.gz" _site/
+    - script: tar -cvzf "$(Pipeline.Workspace)/site.tar.gz" _site/
       displayName: "Compress Artifacts"
     - task: PublishPipelineArtifact@1
       inputs:
