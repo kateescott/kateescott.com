@@ -32,7 +32,7 @@ jobs:
   - job: deploy
     dependsOn:
       - build
-    condition: eq(variables['Build.SourceBranch'], 'refs/heads/master')
+    condition: and(eq(variables['Build.SourceBranch'], 'refs/heads/master'), succeeded())
     steps:
       - script: |
           git worktree add gh-pages gh-pages
