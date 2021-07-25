@@ -38,7 +38,6 @@ jobs:
           buildType: 'current'
           downloadType: 'single'
           artifactName: 'site'
-          downloadPath: 'gh-pages'
       - task: DownloadSecureFile@1
         inputs:
           secureFile: 'deploy_key'
@@ -51,6 +50,7 @@ jobs:
           git remote set-url origin git@github.com:kateescott/kateescott.com.git
         displayName: 'Setup Deploy Environment'
       - script: |
+          cp -r $(System.ArtifactsDirectory)/_site/{.*,*} .
           git add -A
           git commit -m "$(Build.SourceVersionMessage)"
           git push origin gh-pages
