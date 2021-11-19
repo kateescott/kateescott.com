@@ -60,5 +60,4 @@ social_links:
 exclude:
   - Gemfile
   - Gemfile.lock
-  - azure-pipelines.yml
-
+  - .github/workflows/workflow.yaml
