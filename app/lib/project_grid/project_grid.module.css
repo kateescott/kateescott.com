@@ -1,0 +1,36 @@
+
+.projectsGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 1fr;
+    grid-gap: 30px;
+}
+
+.card {
+    display: block;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+.cardThumbnailContainer {
+    height:320px;
+    overflow: hidden;
+    border-bottom: 1px solid #eee;
+    background: lightblue;
+    position: relative;
+    padding: 16px;
+}
+
+.cardThumbnail {
+    /*position: absolute;*/
+    object-fit: scale-down;
+    width: 100%;
+    height: 100%;
+}
+
+.cardTitle {
+    padding: 32px;
+    font-size: 24px;
+}

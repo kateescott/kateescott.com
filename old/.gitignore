@@ -1,0 +1,13 @@
+
+# Created by https://www.gitignore.io/api/jekyll
+
+### Jekyll ###
+_site/
+.sass-cache/
+.jekyll-metadata
+.jekyll-cache
+
+# End of https://www.gitignore.io/api/jekyll
+*.DS_Store
+
+.idea

@@ -1,0 +1,44 @@
+.projectInfo {
+    max-width: 700px;
+}
+
+.title {
+    font-size: 56px;
+    font-weight: 500;
+    color: #171717; /* Dark/90 */
+    margin: 8px 0;
+}
+
+.subtitle {
+    font-size: 24px;
+    font-weight: 400;
+    color: #171717; /* Dark/90 */
+    margin: 8px 0;
+}
+
+.description {
+    font-size: 20px;
+    font-weight: 400;
+    color: #808080; /* Dark/50 */
+    margin-top: 56px;
+}
+
+.description {
+    font-size: 20px;
+    font-weight: 400;
+    color: #808080 /* Dark/50 */
+}
+
+.attributes {
+    display: flex;
+    margin-top: 64px;
+}
+
+.attributes * {
+    margin-right: 32px;
+    color: #808080 /* Dark/50 */
+}
+
+.attributeLabel{
+    color: #171717; /* Dark/90 */
+}

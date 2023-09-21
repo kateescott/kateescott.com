@@ -1,24 +1,34 @@
-## Project Tiles Color Palette
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-* Green: #B5DEC4
-* Orange:  #F9CBAC
-* Gray: #EEF0F2
-* Yellow: #F7E1A9
-* Blue:  #B6E2E9
-* Purple: #D0B8D1 
-* Pink: #F8ADAB
+## Getting Started
 
-## Asset Optimization
+First, run the development server:
 
-For most vector art assets, PNG compression should be sufficient. It can be further optimized with `pngqaunt`:
-
-```sh
-pngquant --skip-if-larger --force --ext .png *.png
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
 ```
 
-For photography assets, they should be converted to JPEG and further optimized:
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-```sh
-mogrify -format jpg *.png
-jpegoptim --all-progressive -s -m80 *.jpg
-```
+You can start editing the page by modifying `app/page.tsx.old`. The page auto-updates as you edit the file.
+
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+
+## Learn More
+
+To learn more about Next.js, take a look at the following resources:
+
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
