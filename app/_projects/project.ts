@@ -6,6 +6,7 @@ import {elderAbuseNetwork} from "@/app/_projects/legacy/elder-abuse-network";
 import {CSSProperties} from "react";
 import {labourMarketInsights} from "@/app/_projects/labour-market-insights";
 import {wellvana} from "@/app/_projects/wellvana";
+import {talentLens} from "@/app/_projects/talent-lens";
 
 export type Project = {
     Page: React.ComponentType<{}>;
@@ -19,6 +20,7 @@ const PROJECTS: { [key: string]: Project } = {
     'ontology-mapping': ontologyMapping,
     'labour-market-insights': labourMarketInsights,
     'wellvana': wellvana,
+    'talent-lens': talentLens,
     '100-warm-tunas': warmTunas,
     'coffee-break': coffeeBreak,
     'elder-abuse-network': elderAbuseNetwork,
