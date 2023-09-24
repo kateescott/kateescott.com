@@ -77,7 +77,7 @@ function Page() {
                 </div>
             </section>
             <section className={styles.section}>
-                <div className={styles.imageCard} style={{background: '#005850'}}>
+                <div className={styles.imageCard} style={{background: '#BCDCD6'}}>
                     <img className={styles.image} src={img2.src} alt="" height="480"/>
                 </div>
             </section>
@@ -135,13 +135,13 @@ function Page() {
                 <div className={styles.text}>
                     <h4 className={styles.title}>Challenges and Learnings</h4>
                     <ol className={styles.list}>
-                        <li>Limited Research: The challenge of limited research required making design decisions based
+                        <li>Limited research: The challenge of limited research required making design decisions based
                             on assumptions and internal feedback.
                         </li>
-                        <li>Iterative Improvement: Regular internal feedback sessions helped refine the design and
+                        <li>Iterative improvement: Regular internal feedback sessions helped refine the design and
                             validate assumptions made during the process.
                         </li>
-                        <li>Importance of Collaboration: Collaborating with team members and stakeholders provided
+                        <li>Importance of collaboration: Collaborating with team members and stakeholders provided
                             valuable insights and perspectives.
                         </li>
                     </ol>

@@ -7,7 +7,7 @@ export default function Home() {
         <main className="pageContent">
             <Hero>
                 <h2>Hi, I’m Kate 👋</h2>
-                <p>I’m a Graphic Designer located in Sydney</p>
+                <p>I’m a UX/UI Designer based in Sydney</p>
             </Hero>
             <ProjectsGrid>
                 {getAllProjects().map((project) => (

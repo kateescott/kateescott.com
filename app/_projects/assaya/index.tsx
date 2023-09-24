@@ -71,7 +71,7 @@ function Page() {
                 <Carousel backgroundColor="#F7FAF9" items={[
                     {src: assaya1, alt: ''},
                     {src: assaya2, alt: ''},
-                    {src: assaya3, alt: ''},
+                    {src: assaya3, alt: '',backgroundColor: '#FFFBF8'},
                     {src: assaya4, alt: ''},
                 ]}/>
             </section> 
@@ -102,7 +102,7 @@ function Page() {
             <section className={styles.section}>
                  <Carousel backgroundColor="#F7FAF9" items={[
                   {src: assaya5, alt: ''},
-                  {src: assaya6, alt: ''},
+                  {src: assaya6, alt: '',backgroundColor: '#FFFBF8'},
                 ]}/>
             </section>
 
@@ -116,7 +116,7 @@ function Page() {
                 </div>
             </section>
             <section className={styles.section}>
-                <div className={classNames(styles.text, styles.highlight)}>
+                <div className={classNames(styles.text, styles.highlight)} style={{backgroundColor: '#F7FAF9', color:'#1B4240'}}>
                     <p>
                     How might we design the Assaya platform so that NGOs can easily and effectively target prevention and intervention strategies, which can lead to improved healthcare outcomes for remote Aboriginal communities?
                     </p>

@@ -14,6 +14,7 @@ import lmicarousel5 from './assets/lmi-carousel5.png'
 import lmicarousel6 from './assets/lmi-carousel6.png'
 import lmicarousel7 from './assets/lmi-carousel7.png'
 import lmicarousel8 from './assets/lmi-carousel8.png'
+import lmi2 from './assets/lmi-2.png'
 
 import {Carousel, CarouselItem, Lightbox} from "@/app/lib/carousel/carousel";
 
@@ -83,10 +84,11 @@ function Page() {
                     </div>
                 </section>
                 <section className={styles.section}>
-                    <div className={styles.imageCard} style={{background: '#F5FCFC'}}>
-                        <img className={styles.image} src={labourmarketinsightspersona.src} alt="" height="480"/>
-                    </div>
-                </section>
+                <Carousel backgroundColor="rgba(255, 238, 204, 0.5)" items={[
+                    {src: labourmarketinsightspersona, alt: '', backgroundColor: '#F5FCFC'},
+                    {src: lmi2, alt: '', backgroundColor: '#FFF9FA'},
+                ]}/>
+            </section>
 
                 <section className={styles.section}>
                     <div className={styles.text}>
@@ -99,7 +101,7 @@ function Page() {
                     </div>
                 </section>
                 <section className={styles.section}>
-                    <div className={classNames(styles.text, styles.highlight)}>
+                    <div className={classNames(styles.text, styles.highlight)}  style={{background: '#FFF9FA',color: '#993D4F'}}>
                         {/* TO DO */}
                         <p>
                             How might we empower government clients with informed policy decisions for a thriving
