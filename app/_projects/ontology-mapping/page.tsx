@@ -187,7 +187,7 @@ export default function OntologyMappingProject() {
                     <p>
                         By addressing the challenges of data onboarding, Faethm by Pearson's Ontology Mapping
                         revolutionises how organisations leverage skills and jobs data, providing users with a seamless
-                        and efficient experience, ultimately leading to enhanced insights and informed decision-making
+                        and efficient experience, ultimately leading to enhanced insights and informed decision-making.
                     </p>
                 </div>
             </section>
