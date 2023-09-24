@@ -1,6 +1,6 @@
-import cover_1 from '@/app/projects-legacy/data/100_warm_tunas/cover_1.png'
-import cover_2 from '@/app/projects-legacy/data/100_warm_tunas/cover_2.png'
-import cover_3 from '@/app/projects-legacy/data/100_warm_tunas/cover_3.png'
+import cover_1 from '@/app/_projects/legacy/100_warm_tunas/cover_1.png'
+import cover_2 from '@/app/_projects/legacy/100_warm_tunas/cover_2.png'
+import cover_3 from '@/app/_projects/legacy/100_warm_tunas/cover_3.png'
 import Image from 'next/image';
 
 export function generateStaticParams() {

@@ -1,0 +1,127 @@
+.carousel {
+    width: 100%;
+    overflow: hidden;
+    background: red;
+    padding: 56px;
+    box-sizing: border-box;
+
+    position: relative;
+}
+
+.items {
+    overflow-x: scroll;
+    display: flex;
+    scroll-snap-type: x mandatory;
+    scroll-snap-stop: always;
+
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.items::-webkit-scrollbar {
+    display: none;
+}
+
+
+.item {
+    scroll-snap-align: start;
+    min-width: 100%;
+    height: 600px;
+}
+
+.itemImgContainer {
+    position: relative;
+    height: 100%;
+}
+
+
+.controlsLayer {
+}
+
+.prev,
+.next {
+    background: white;
+    border-radius: 100%;
+    border: 1px solid #eee;
+    padding: 8px;
+    font-size: 16px;
+    line-height: 1;
+    cursor: pointer;
+
+    transition: ease-in-out background 0.2s;
+}
+
+.prev:hover,
+.next:hover {
+    background: #fafafa;
+}
+
+.prev:active,
+.next:active {
+    background: #eee;
+}
+
+.prev {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+}
+
+.next {
+    position: absolute;
+    right: 16px;
+    top: 50%;
+}
+
+.status {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+
+    display: flex;
+    justify-content: center;
+}
+
+.statusDot {
+    border: none;
+    background: none;
+    padding: 4px;
+    cursor: pointer;
+}
+
+.statusDot span {
+    display: block;
+    width: 8px;
+    height: 8px;
+    background: #AAA;
+    border-radius: 100%;
+}
+
+.statusDot:hover span {
+    background: #999;
+}
+
+.statusDot:active span {
+    background: #808080;
+}
+
+.statusDot.active span {
+    background: #808080;
+}
+
+.lightbox {
+    position: fixed;
+    top:0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0,0,0,0.6);
+    z-index: 10;
+    padding: 64px;
+}
+
+.lightboxInner {
+    position: relative;
+    height:100%;
+    width: 100%;
+}

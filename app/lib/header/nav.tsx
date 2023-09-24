@@ -18,7 +18,6 @@ export function Nav() {
                 </div>
                 <div className={styles.menubar__items}>
                     <MenuItem href="/">Home</MenuItem>
-                    <MenuItem href="/about/">About</MenuItem>
                     <MenuItem href="/projects/">Projects</MenuItem>
                 </div>
             </nav>

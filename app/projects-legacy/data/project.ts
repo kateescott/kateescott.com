@@ -1,4 +1,4 @@
-import warmTunas from './100_warm_tunas/project';
+import warmTunas from '@/app/_projects/legacy/100_warm_tunas';
 import {StaticImageData} from "next/image";
 import {CSSProperties} from "react";
 

@@ -1,8 +1,6 @@
-import Image from 'next/image'
-import {Nav} from "@/app/lib/header/nav";
-import {PROJECTS} from "@/app/projects/projects";
 import {ProjectCard, ProjectsGrid} from "@/app/lib/project_grid/project_grid";
 import React from "react";
+import {getAllProjects} from "@/app/_projects/project";
 
 export default function Home() {
     return (
@@ -12,12 +10,13 @@ export default function Home() {
                 <p>I’m a Graphic Designer located in Sydney</p>
             </Hero>
             <ProjectsGrid>
-                {PROJECTS.map((project) => (
+                {getAllProjects().map((project) => (
                     <ProjectCard
-                        title={project.name}
+                        title={project.title}
                         key={project.slug}
-                        url={project.url}
-                        thumbnailSrc={project.thumbnailSrc}
+                        url={'/projects/' + project.slug}
+                        thumbnail={project.thumbnail}
+                        cardStyle={project.cardStyle}
                     />
                 ))}
             </ProjectsGrid>

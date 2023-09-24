@@ -1,6 +1,5 @@
 import {ProjectInfo} from "@/app/lib/project_info/project_info";
-import {Project} from "@/app/lib/project/project";
-import {ProjectSection} from "@/app/lib/project_section/project_section";
+import {ProjectLayout} from "@/app/lib/project/project";
 import workforceSummaryImg from './assets/workforce_summary.png';
 import workforceMappingImg from './assets/workforce_mapping.png';
 import image2Img from './assets/image_2.png';
@@ -10,10 +9,11 @@ import Image from 'next/image'
 import styles from './ontology_mapping.module.css';
 import classNames from "classnames";
 import React from "react";
+import {Carousel, CarouselItem, Lightbox} from "@/app/lib/carousel/carousel";
 
 export default function OntologyMappingProject() {
     return (
-        <Project>
+        <ProjectLayout>
             <section className={styles.section}>
                 <ProjectInfo
                     title="Ontology Mapping"
@@ -151,9 +151,12 @@ export default function OntologyMappingProject() {
                 </div>
             </section>
             <section className={styles.section}>
-                <div className={styles.imageCard} style={{background: '#F0FAFD'}}>
-                    <img className={styles.image} src={workforceMappingImg.src} alt=""/>
-                </div>
+                <Carousel backgroundColor="#F0FAFD" items={[
+                    {src: workforceMappingImg, alt: ''},
+                    {src: workforceMappingImg, alt: ''},
+                    {src: workforceMappingImg, alt: ''},
+                    {src: workforceMappingImg, alt: ''},
+                ]}/>
             </section>
             <section className={styles.section}>
                 <div className={styles.text}>
@@ -188,7 +191,7 @@ export default function OntologyMappingProject() {
                     </p>
                 </div>
             </section>
-        </Project>
+        </ProjectLayout>
     );
 }
 

@@ -1,17 +1,18 @@
 import React from "react";
 import {ProjectCard, ProjectsGrid} from "@/app/lib/project_grid/project_grid";
-import {PROJECTS} from "@/app/projects/projects";
+import {getAllProjects} from "@/app/_projects/project";
 
 
 export default function Projects() {
     return (
         <ProjectsGrid>
-            {PROJECTS.map((project) => (
+            {getAllProjects().map((project) => (
                 <ProjectCard
-                    title={project.name}
+                    title={project.title}
                     key={project.slug}
-                    url={project.url}
-                    thumbnailSrc={project.thumbnailSrc}
+                    url={'/projects/' + project.slug}
+                    thumbnail={project.thumbnail}
+                    cardStyle={project.cardStyle}
                 />
             ))}
         </ProjectsGrid>
