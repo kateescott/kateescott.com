@@ -11,6 +11,15 @@ import principles1 from './assets/principles1.png';
 import principles2 from './assets/principles2.png';
 import types1 from './assets/types1.png';
 import types2 from './assets/types2.png';
+import colours1 from './assets/colours1.png';
+import colours2 from './assets/colours2.png';
+import colours3 from './assets/colours3.png';
+import colours4 from './assets/colours4.png';
+import colours5 from './assets/colours5.png';
+import solution1 from './assets/solution1.png';
+import solution2 from './assets/solution2.png';
+import solution3 from './assets/solution3.png';
+import solution4 from './assets/solution4.png';
 import classNames from "classnames";
 import {Carousel} from "@/app/lib/carousel/carousel";
 import workforceMappingImg from "@/app/_projects/ontology-mapping/assets/workforce_mapping.png";
@@ -163,7 +172,10 @@ function Page() {
                 <div className={styles.text}>
                     <h4 className={styles.title}>Choosing the right chart</h4>
                     <p>
-                        Selecting the right chart type is paramount to our approach to data visualisation. We recognise that humans comprehend visual information better than text, and our goal is to simplify data interpretation. By offering a diverse range of chart options tailored to different scenarios, we are enabled to present data effectively and intuitively to our users.
+                        Selecting the right chart type is paramount to our approach to data visualisation. We recognise
+                        that humans comprehend visual information better than text, and our goal is to simplify data
+                        interpretation. By offering a diverse range of chart options tailored to different scenarios, we
+                        are enabled to present data effectively and intuitively to our users.
                     </p>
                 </div>
             </section>
@@ -177,13 +189,71 @@ function Page() {
                 <div className={styles.text}>
                     <h4 className={styles.title}>Color, Layout & Styling</h4>
                     <p>
-                        Colours, layout and styling play a crucial role in data visualisation, their significance is due their ability to:
+                        Colours, layout and styling play a crucial role in data visualisation, their significance is due
+                        their ability to:
                     </p>
                     <ol className={styles.list}>
                         <li>Convey information: colours simplify complex data and make it memorable.</li>
-                        <li>Highlight patterns: thoughtful layout design guides viewers to discern patterns effortlessly, ensuring critical insights aren't missed.</li>
-                        <li>Differentiate data points: Styling choices like fonts and shapes help users distinguish data categories, making information interpretation more intuitive.</li>
+                        <li>Highlight patterns: thoughtful layout design guides viewers to discern patterns
+                            effortlessly, ensuring critical insights aren't missed.
+                        </li>
+                        <li>Differentiate data points: Styling choices like fonts and shapes help users distinguish data
+                            categories, making information interpretation more intuitive.
+                        </li>
                     </ol>
+                </div>
+            </section>
+            <section className={styles.section}>
+                <Carousel backgroundColor="#F5FCFC" items={[
+                    {src: colours1, alt: ''},
+                    {src: colours2, alt: ''},
+                    {src: colours3, alt: ''},
+                    {src: colours4, alt: ''},
+                    {src: colours5, alt: ''},
+                ]}/>
+            </section>
+            <section className={styles.section}>
+                <div className={styles.text}>
+                    <h4 className={styles.title}>The Solution</h4>
+                    <p>
+                        Our data visualisation library offers a holistic solution to the challenges faced by data
+                        analysts and researchers. It's designed to provide an accurate, helpful, and scalable
+                        visualisation tool that empowers users.
+                    </p>
+                    <ol className={styles.list}>
+                        <li>Wide range of visualisations: The library has a comprehensive collection of visualisations,
+                            both static and interactive, allowing users to interpret their data accurately.
+                        </li>
+                        <li>User-friendly interface: We've crafted an intuitive interface that guides users through the
+                            visualisation process while offering customisation options.
+                        </li>
+                        <li>Consistency and performance: Ensuring that design elements are consistent across different
+                            visualisations and platforms guarantees accurate interpretation and scalability.
+                        </li>
+                        <li>Documentation and support: We'll provide extensive documentation and support resources to
+                            help the team make the most of the library.
+                        </li>
+                    </ol>
+                </div>
+            </section>
+            <section className={styles.section}>
+                <Carousel backgroundColor="#F5FCFC" items={[
+                    {src: solution1, alt: ''},
+                    {src: solution2, alt: ''},
+                    {src: solution3, alt: ''},
+                    {src: solution4, alt: ''},
+                ]}/>
+            </section>
+            <section className={styles.section}>
+                <div className={styles.text}>
+                    <h4 className={styles.title}>Summary</h4>
+                    <p>
+                        In summary, our data visualisation library addresses the challenges faced by data analysts and
+                        researchers, offering a user-friendly tool that adheres to data visualisation principles and
+                        design maxims. With its intuitive interface, diverse visualisation options, and emphasis on
+                        consistency, performance, and accessibility, it becomes an indispensable resource for data
+                        professionals.
+                    </p>
                 </div>
             </section>
         </ProjectLayout>
