@@ -10,7 +10,7 @@ import classNames from "classnames";
 
 export function Carousel({backgroundColor, items}: {
     backgroundColor?: string,
-    items: { src: StaticImageData, alt: string }[],
+    items: { src: StaticImageData, alt: string, backgroundColor?: string }[],
 }) {
 
     const scrollRef = useRef<HTMLDivElement>(null);
@@ -43,9 +43,10 @@ export function Carousel({backgroundColor, items}: {
         })
     }, [scrollRef]);
 
+    const currentItem = items[scrollPos]
 
     return (
-        <div className={styles.carousel} style={{backgroundColor}}>
+        <div className={styles.carousel} style={{backgroundColor: currentItem?.backgroundColor ?? backgroundColor}}>
             <div className={styles.items} ref={scrollRef}>
                 {items.map((item, i) =>
                     <CarouselItem key={i} src={item.src} alt={item.alt}/>)}
