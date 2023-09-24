@@ -7,6 +7,9 @@ import {CSSProperties} from "react";
 import {labourMarketInsights} from "@/app/_projects/labour-market-insights";
 import {wellvana} from "@/app/_projects/wellvana";
 import {talentLens} from "@/app/_projects/talent-lens";
+import {dataVisualisationLibrary} from "@/app/_projects/data-visualisation-library";
+import {learnMate} from "@/app/_projects/learn-mate";
+import {assaya} from "@/app/_projects/assaya";
 
 export type Project = {
     Page: React.ComponentType<{}>;
@@ -20,10 +23,15 @@ const PROJECTS: { [key: string]: Project } = {
     'ontology-mapping': ontologyMapping,
     'labour-market-insights': labourMarketInsights,
     'wellvana': wellvana,
+    'assaya': assaya,
     'talent-lens': talentLens,
-    '100-warm-tunas': warmTunas,
-    'coffee-break': coffeeBreak,
-    'elder-abuse-network': elderAbuseNetwork,
+    'learn-mate': learnMate,
+    'data-visualization-library': dataVisualisationLibrary,
+
+    // Legacy
+    // '100-warm-tunas': warmTunas,
+    // 'coffee-break': coffeeBreak,
+    // 'elder-abuse-network': elderAbuseNetwork,
 }
 
 export function getProjectSlugs(): string[] {
