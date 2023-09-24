@@ -15,10 +15,9 @@
 }
 
 .cardThumbnailContainer {
-    height:320px;
+    height:220px;
     overflow: hidden;
     border-bottom: 1px solid #eee;
-    background: lightblue;
     position: relative;
     padding: 16px;
 }

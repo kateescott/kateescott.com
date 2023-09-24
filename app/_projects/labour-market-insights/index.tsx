@@ -210,5 +210,6 @@ function Page() {
 export const labourMarketInsights: Project = {
     Page: Page,
     title: "Labour Market Insights",
-    thumbnail: "",
+    thumbnail: labourmarketinsights,
+    cardStyle: {background: '#28B0A5'},
 }

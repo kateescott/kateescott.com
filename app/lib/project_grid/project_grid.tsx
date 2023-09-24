@@ -17,8 +17,8 @@ export function ProjectCard({title, url, thumbnail, cardStyle}: {
     thumbnail: StaticImageData | string,
     cardStyle: CSSProperties | undefined
 }) {
-    return <a href={url} className={styles.card} style={cardStyle}>
-        <div className={styles.cardThumbnailContainer}>
+    return <a href={url} className={styles.card}>
+        <div className={styles.cardThumbnailContainer} style={cardStyle}>
             {/*<img src={thumbnailSrc} alt="" />*/}
             <Image className={styles.cardThumbnail} src={thumbnail} alt=""/>
         </div>

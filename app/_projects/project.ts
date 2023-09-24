@@ -5,7 +5,6 @@ import {coffeeBreak} from "@/app/_projects/legacy/coffee-break";
 import {elderAbuseNetwork} from "@/app/_projects/legacy/elder-abuse-network";
 import {CSSProperties} from "react";
 import {labourMarketInsights} from "@/app/_projects/labour-market-insights";
-import {wellvana} from "@/app/_projects/wellvana";
 import {talentLens} from "@/app/_projects/talent-lens";
 import {dataVisualisationLibrary} from "@/app/_projects/data-visualisation-library";
 import {learnMate} from "@/app/_projects/learn-mate";
@@ -22,7 +21,6 @@ export type Project = {
 const PROJECTS: { [key: string]: Project } = {
     'ontology-mapping': ontologyMapping,
     'labour-market-insights': labourMarketInsights,
-    'wellvana': wellvana,
     'assaya': assaya,
     'talent-lens': talentLens,
     'learn-mate': learnMate,

@@ -1,19 +1,18 @@
-import {PROJECTS} from "@/app/projects-legacy/[slug]/page";
 import Image from "next/image";
+import {getAllProjects} from "@/app/_projects/project";
 
 export default function Projects() {
-    const projects = PROJECTS;
 
-    return <div>
+    return <div style={{marginTop: '128px'}}>
         <div className="tiles">
-            {projects.map(project => (
+            {getAllProjects().map(project => (
                 <a key={project.slug}
                    className="tiles__tile"
-                   style={project.gallery.style}
-                   href={project.slug}>
+                   style={project.cardStyle}
+                   href={"/projects/" + project.slug}>
                     <div
                         className="tiles__tileContent tiles__tileContent--edgeToEdge">
-                        <Image className="tiles__tileImage" src={project.gallery.media[0]} alt=""/>
+                        <Image className="tiles__tileImage" src={project.thumbnail} alt=""/>
                     </div>
                     <div className="tiles__tileInfo">
                         <span>{project.title}</span>

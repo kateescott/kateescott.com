@@ -177,5 +177,6 @@ function Page() {
 export const talentLens: Project = {
     Page: Page,
     title: "TalentLens",
-    thumbnail: "",
+    thumbnail: img1,
+    cardStyle: {background: '#005850'},
 }

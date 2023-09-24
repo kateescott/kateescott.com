@@ -111,5 +111,6 @@ function Page() {
 export const learnMate: Project = {
     Page: Page,
     title: "LearnMate",
-    thumbnail: "",
+    thumbnail: img1,
+    cardStyle: {background: '#E6F7FC'},
 }
