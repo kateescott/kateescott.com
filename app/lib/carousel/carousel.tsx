@@ -10,7 +10,7 @@ import classNames from "classnames";
 
 export function Carousel({backgroundColor, items}: {
     backgroundColor?: string,
-    items: { src: StaticImageData, alt: string, backgroundColor?: string }[],
+    items: { src: StaticImageData, alt: string, backgroundColor?: string, caption?: string }[],
 }) {
 
     const scrollRef = useRef<HTMLDivElement>(null);
@@ -49,7 +49,7 @@ export function Carousel({backgroundColor, items}: {
         <div className={styles.carousel} style={{backgroundColor: currentItem?.backgroundColor ?? backgroundColor}}>
             <div className={styles.items} ref={scrollRef}>
                 {items.map((item, i) =>
-                    <CarouselItem key={i} src={item.src} alt={item.alt}/>)}
+                    <CarouselItem key={i} src={item.src} alt={item.alt} caption={item.caption}/>)}
             </div>
             <div className={styles.controlsLayer}>
                 {scrollPos > 0 && <button onClick={onPrev} className={styles.prev}>&larr;</button>}
@@ -66,12 +66,15 @@ export function Carousel({backgroundColor, items}: {
     )
 }
 
-export function CarouselItem({alt, src}: { alt: string, src: StaticImageData }) {
+export function CarouselItem({alt, src, caption}: { alt: string, src: StaticImageData, caption: string | undefined }) {
     return (
         <div className={styles.item}>
-            <div className={styles.itemImgContainer}>
-                <a href={src.src} target="_blank"><Image fill={true} alt={alt} src={src} objectFit="contain"/></a>
+            <div>
+                <div className={styles.itemImgContainer}>
+                    <a href={src.src} target="_blank"><Image fill={true} alt={alt} src={src} objectFit="contain"/></a>
+                </div>
             </div>
+            {caption && <div className={styles.caption}>{caption}</div>}
         </div>
     )
 }
