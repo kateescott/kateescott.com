@@ -236,8 +236,15 @@ export default function OntologyMappingProject() {
                 ]}/>
             </section>
 
-             {/* TO DO - IMPACT  */}
 
+            <section className={styles.section}>
+                <div className={classNames(styles.text, styles.highlight, styles.hero)} style={{background: '#F9F9F9'}}>
+                    <h4 className={styles.title} style={{color: '#004E66'}}>The results of this project:</h4>
+                    <p>
+                        Client data onboarding time drastically reduced from an average of <strong>90 business days to just a few hours.</strong>
+                    </p>
+                </div>
+            </section>
             <section className={styles.section}>
                 <div className={styles.text}>
                     <h4 className={styles.title}>Project Learnings</h4>

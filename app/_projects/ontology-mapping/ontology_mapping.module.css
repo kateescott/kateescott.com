@@ -25,6 +25,15 @@
     margin-bottom: 8px;
 }
 
+.text strong {
+    font-weight: bold;
+}
+
+.text.hero p {
+    font-size: 24px;
+}
+
+
 .text.highlight {
     padding-top: 64px;
     padding-bottom: 64px;
