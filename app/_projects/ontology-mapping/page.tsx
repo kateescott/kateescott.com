@@ -24,6 +24,7 @@ import om19 from './assets/om19.png';
 import om20 from './assets/om20.png';
 import om21 from './assets/om21.png';
 import omcover from './assets/omcover.png';
+import ontologymap from './assets/ontology-map.png';
 
 import Image from 'next/image'
 import styles from './ontology_mapping.module.css';
@@ -41,7 +42,7 @@ export default function OntologyMappingProject() {
                     description={
                         <>
                             <p>Faethm by Pearson's Ontology Mapping offering aims to revolutionise the way organisations leverage skills and jobs data. It empowers organisations by providing them with a comprehensive understanding of the jobs within their ecosystem, thanks to advanced algorithms that prioritise data accuracy.</p>
-                            <p>The goal of this project is to bridge the gap between disparate client data sources and Faethm by Pearson’s robust occupation ontology. This process ensures that all data points are consistently and meaningfully organised ultimately, allowing for a holistic view of the organisation’s insights across the entire product suite.</p>
+                            <p>The goal of this project is to bridge the gap between disparate client data sources and Faethm by Pearson’s robust occupation ontology. This process ensures that all data points are consistently and meaningfully organised, ultimately allowing for a holistic view of the organisation’s insights across the entire product suite.</p>
                         </>
                     }
                     organization="Faethm by Pearson"
@@ -83,12 +84,13 @@ export default function OntologyMappingProject() {
                     <p>For instance, during an internal interview with the customer team, we discovered that onboarding new clients often took months due to manual data validation, causing delays in project timelines. Externally, we interviewed a data analyst who shared their frustration about the lack of self-serve resources availability to understand the platform's ontology framework.</p>
                 </div>
             </section>
-            {/* <section className={styles.section}>
-                <div className={styles.imageCard} style={{background: '#F9F9F9'}}>
-                    <img className={styles.image} src={image2Img.src} alt="" height="480"/>
+            <section className={styles.section}>
+                <div className={classNames(styles.text, styles.highlight)}>
+                    <p>
+                        "Theres been organisations who've had a validation file sitting with them for a good six months."
+                    </p>
                 </div>
-            </section> */}
-
+            </section>
 <section className={styles.section}>
                 <div className={styles.text}>
                     <h4 className={styles.title}>Research Insights</h4>
@@ -108,20 +110,20 @@ export default function OntologyMappingProject() {
                 </div>
             </section>
 
+        
             <section className={styles.section}>
-                <div className={classNames(styles.text, styles.highlight)}>
-                    <p>
-                        "Theres been organisations who've had a validation file sitting with them for a good six months."
-                    </p>
+                <div className={styles.imageCard} style={{background: '#F9F9F9'}}>
+                    <img className={styles.image} src={ontologymap.src} alt="" height="480"/>
                 </div>
             </section>
+
 
 
             <section className={styles.section}>
                 <div className={styles.text}>
                     <h4 className={styles.title}>User Profile</h4>
                     <p>
-                    Through research, a persona named Fei Fei, representing a typical user, was developed to gain deeper insights into the needs, preferences, and behaviours of the target audience. Fei Fei's job responsibilities include creating and retaining a consistent supply of top talent, reviewing job details, and providing quarterly people analytic reporting.</p>
+                    Through research, a persona named Fei Fei, representing a typical user, was developed to gain deeper insights into the jobs to be done and pain points of the target audience. Fei Fei's job responsibilities include creating and retaining a consistent supply of top talent, reviewing job details, and providing quarterly people analytic reporting.</p>
 
 <p>We discovered that Fei Fei often had to rely on spreadsheets and manual data cleaning processes to align the company's data with the platform.
                     </p>
