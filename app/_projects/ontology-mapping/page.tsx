@@ -41,8 +41,7 @@ export default function OntologyMappingProject() {
                     subtitle="Empowering insights through unified client data mapping."
                     description={
                         <>
-                            <p>Faethm by Pearson's Ontology Mapping offering aims to revolutionise the way organisations leverage skills and jobs data. It empowers organisations by providing them with a comprehensive understanding of the jobs within their ecosystem, thanks to advanced algorithms that prioritise data accuracy.</p>
-                            <p>The goal of this project is to bridge the gap between disparate client data sources and Faethm by Pearson’s robust occupation ontology. This process ensures that all data points are consistently and meaningfully organised, ultimately allowing for a holistic view of the organisation’s insights across the entire product suite.</p>
+                            <p>Faethm by Pearson's occupation mapping is transforming how organisations leverage skills and jobs data. It provides organisations with a comprehensive understanding of their workforce by seamlessly bridging the gap between different data sources.</p>
                         </>
                     }
                     organization="Faethm by Pearson"
@@ -112,13 +111,11 @@ export default function OntologyMappingProject() {
                         with the data onboarding process. These insights highlighted four main categories:
                     </p>
                     <ol className={styles.list}>
-                        <li>Manual labor and troubleshooting issues increase processing requirements.</li>
-                        <li>The validation process takes over 90 business days due to manual job matching and
-                            low-confidence role reviews.
-                        </li>
-                        <li>Data changes by clients negatively impact platform readiness and onboarding process.
-                        </li>
-                        <li>Lack of prior ontology knowledge and complex understanding for clients.</li>
+                        <li>Users reported spending several hours daily manually matching job roles and troubleshooting data discrepancies. Notably, the Ontology Manager was solely responsible for manually matching job roles to the ontology.</li>
+                        <li>Validation duration: Internal data revealed that the validation process took an average of 90 business days due to manual job matching and low-confidence role reviews, causing significant delays in onboarding to the platform.</li>
+                        <li>Data changes by clients: The customer onboarding team revealed how unexpected data changes negatively impacted platform readiness.  </li>
+                        <li>Lack of ontology knowledge: Several users expressed difficulty in understanding the ontology framework, which made the onboarding process challenging.
+</li>
                     </ol>
                 </div>
             </section>
