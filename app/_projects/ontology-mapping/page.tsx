@@ -30,7 +30,7 @@ import Image from 'next/image'
 import styles from './ontology_mapping.module.css';
 import classNames from "classnames";
 import React from "react";
-import {Carousel, CarouselItem, Lightbox} from "@/app/lib/carousel/carousel";
+import {Carousel, CarouselItem, Lightbox, TextCarousel} from "@/app/lib/carousel/carousel";
 
 export default function OntologyMappingProject() {
     return (
@@ -70,6 +70,10 @@ export default function OntologyMappingProject() {
                         required for wrangling data, it leads to a faster time to value for customers because teams
                         spend less time cleaning data and more time on revenue-generating work.”
                     </p>
+                    <cite>
+                        – Osmos.io (<a
+                        href="https://www.osmos.io/guides/customer-data-onboarding">https://www.osmos.io/guides/customer-data-onboarding</a>)
+                    </cite>
                 </div>
             </section>
             <section className={styles.section}>
@@ -85,13 +89,22 @@ export default function OntologyMappingProject() {
                 </div>
             </section>
             <section className={styles.section}>
-                <div className={classNames(styles.text, styles.highlight)}>
-                    <p>
-                        "Theres been organisations who've had a validation file sitting with them for a good six months."
-                    </p>
-                </div>
+                <TextCarousel backgroundColor="#F0FAFD" items={[
+                    {
+                        text: "\"Theres been organisations who've had a validation file sitting with them for a good six months.\"",
+                        cite: "– Customer Insights Manager, Pearson"
+                    },
+                    {
+                        text: "\"It can be a little confusing for people who see the ontology for the first time, especially with different levels.\"",
+                        cite: "– Customer Insights Manager, Pearson"
+                    },
+                    {
+                        text: "\"I think the main issue we have, is anytime you do anything manually its subject to an error.\"",
+                        cite: "– Customer Insights Manager, Pearson"
+                    }
+                ]}/>
             </section>
-<section className={styles.section}>
+            <section className={styles.section}>
                 <div className={styles.text}>
                     <h4 className={styles.title}>Research Insights</h4>
                     <p>
@@ -110,7 +123,7 @@ export default function OntologyMappingProject() {
                 </div>
             </section>
 
-        
+
             <section className={styles.section}>
                 <div className={styles.imageCard} style={{background: '#F9F9F9'}}>
                     <img className={styles.image} src={ontologymap.src} alt="" height="480"/>
@@ -181,7 +194,7 @@ export default function OntologyMappingProject() {
                     </p>
                 </div>
             </section>
-           
+
             <section className={styles.section}>
                 <Carousel backgroundColor="#F0FAFD" items={[
                     {src: om13, alt: ''},
@@ -193,7 +206,7 @@ export default function OntologyMappingProject() {
                     {src: om19, alt: ''},
                     {src: om20, alt: ''},
                 ]}/>
-            </section> 
+            </section>
 
             <section className={styles.section}>
                 <div className={styles.text}>

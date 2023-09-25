@@ -2,7 +2,6 @@
     width: 100%;
     overflow: hidden;
     background: red;
-    padding: 56px;
     box-sizing: border-box;
     border-radius: 8px;
 
@@ -29,6 +28,23 @@
 .item {
     scroll-snap-align: start;
     min-width: 100%;
+    padding: 64px;
+    box-sizing: border-box;
+}
+
+.textItem {
+    font-size: 24px;
+}
+
+.textItem blockquote {
+    font-size: 18px;
+    color: #004E66;
+}
+
+.textItem cite {
+    font-size: 14px;
+    color: #004E66;
+    opacity: 0.7;
 }
 
 .itemImgContainer {
@@ -77,12 +93,14 @@
     position: absolute;
     left: 16px;
     top: 50%;
+    transform: translateY(-50%);
 }
 
 .next {
     position: absolute;
     right: 16px;
     top: 50%;
+    transform: translateY(-50%);
 }
 
 .status {
