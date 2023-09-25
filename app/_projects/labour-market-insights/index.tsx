@@ -4,7 +4,7 @@ import {ProjectInfo} from "@/app/lib/project_info/project_info";
 import React from "react";
 import {ProjectLayout} from "@/app/lib/project/project";
 import classNames from "classnames";
-import labourmarketinsights from './assets/labourMarketInsights.png'
+import labourmarketinsights from './assets/LabourMarketInsights.png'
 import labourmarketinsightspersona from './assets/labourmarketinsights-persona.png'
 import lmicarousel1 from './assets/lmi-carousel1.png'
 import lmicarousel2 from './assets/lmi-carousel2.png'
