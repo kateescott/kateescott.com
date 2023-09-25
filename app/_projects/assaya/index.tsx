@@ -29,7 +29,7 @@ function Page() {
             <section className={styles.section}>
                 <ProjectInfo
                     title={assaya.title}
-                    subtitle="Preventing the spread of HIV/AIDS in remote Aboriginal communities."
+                    subtitle={assaya.subtitle}
                     description={
                         <p>Assaya collaborates with NGOs in remote Aboriginal communities to combat HIV/AIDS. Through
                             innovative solutions and support, Assaya enhances the efforts of NGOs in preventing the
@@ -228,6 +228,7 @@ function Page() {
 export const assaya: Project = {
     Page: Page,
     title: "Assaya's Collaboration with NGOs",
+    subtitle: "Preventing the spread of HIV/AIDS in remote Aboriginal communities.",
     thumbnail: assayadashboard,
-    cardStyle: {background: '#519F85'},
+    cardBackground: '#519F85'
 }

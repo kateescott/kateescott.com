@@ -213,5 +213,5 @@ export const labourMarketInsights: Project = {
     title: "Labour Market Insights",
     subtitle: "Empowering informed policy decisions for a thriving workforce.",
     thumbnail: labourmarketinsights,
-    cardStyle: {background: '#28B0A5'},
+    cardBackground: '#28B0A5',
 }

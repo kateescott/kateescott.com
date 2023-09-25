@@ -19,7 +19,7 @@ export default function Home() {
                         key={project.slug}
                         url={'/projects/' + project.slug}
                         thumbnail={project.thumbnail}
-                        cardStyle={project.cardStyle}
+                        backgroundColor={project.cardBackground}
                     />
                 ))}
             </ProjectsGrid>

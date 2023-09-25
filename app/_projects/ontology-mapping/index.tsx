@@ -5,7 +5,7 @@ import omcover from './assets/omcover.png';
 export const ontologyMapping: Project = {
     Page: Page,
     title: "Ontology Mapping",
-    subtitle: "",
+    subtitle: "Empowering insights through unified client data mapping.",
     thumbnail: omcover,
-    cardStyle: {background: '#004E66'},
+    cardBackground: '#004E66',
 }

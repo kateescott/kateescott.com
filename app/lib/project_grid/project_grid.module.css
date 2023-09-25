@@ -27,10 +27,21 @@
     color: #999999;
 }
 
+.thumbnailBackdrop {
+    background: black;
+}
+
 .thumbnailContainer {
     padding: 16px;
     box-sizing: border-box;
     aspect-ratio: 1;
+    border-radius: 4px;
+    background: var(--pgitem-background);
+    transition: 0.2s ease-in-out background-color;
+}
+
+.gridItem:hover .thumbnailContainer {
+   background-color: var(--pgitem-background-hover);
 }
 
 .thumbnailImg {

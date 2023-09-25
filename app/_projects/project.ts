@@ -15,7 +15,7 @@ export type Project = {
     title: string,
     subtitle: string,
     thumbnail: string | StaticImageData,
-    cardStyle?: CSSProperties,
+    cardBackground: `#${string}`,
 }
 
 

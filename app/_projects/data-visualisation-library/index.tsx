@@ -31,7 +31,7 @@ function Page() {
             <section className={styles.section}>
                 <ProjectInfo
                     title={dataVisualisationLibrary.title}
-                    subtitle="Empowering insights through dynamic data visualisations."
+                    subtitle={dataVisualisationLibrary.subtitle}
                     description={
                         <p>The development of a data visualisation library creates a comprehensive tool for analysing
                             and interpreting complex data. Adhering to data visualisation principles and design maxims,
@@ -263,6 +263,7 @@ function Page() {
 export const dataVisualisationLibrary: Project = {
     Page: Page,
     title: "Data Visualisation Library",
+    subtitle: "Empowering insights through dynamic data visualisations.",
     thumbnail: coverImg,
-    cardStyle: {background: '#008079'},
+    cardBackground: '#008079',
 }

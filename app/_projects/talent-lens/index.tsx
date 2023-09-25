@@ -19,7 +19,7 @@ function Page() {
             <section className={styles.section}>
                 <ProjectInfo
                     title={talentLens.title}
-                    subtitle="Enhancing the potential of Pearson's TalentLens assessment solutions."
+                    subtitle={talentLens.subtitle}
                     description={
                         <p>Pearson's TalentLens is a comprehensive portfolio of psychometrics assessment solutions
                             designed to help organisations identify, develop, and retain top talent. The project aims to
@@ -177,6 +177,7 @@ function Page() {
 export const talentLens: Project = {
     Page: Page,
     title: "TalentLens",
+    subtitle: "Enhancing the potential of Pearson's TalentLens assessment solutions.",
     thumbnail: img1,
-    cardStyle: {background: '#005850'},
+    cardBackground: '#005850'
 }

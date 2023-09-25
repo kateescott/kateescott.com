@@ -14,7 +14,7 @@ function Page() {
             <section className={styles.section}>
                 <ProjectInfo
                     title={learnMate.title}
-                    subtitle="Revolutionising career growth through personalised learning journeys."
+                    subtitle={learnMate.subtitle}
                     description={
                         <p>Pearson LearnMate revolutionises career development and skill acquisition through
                             personalised learning journeys. The project creates an innovative online platform that
@@ -111,6 +111,7 @@ function Page() {
 export const learnMate: Project = {
     Page: Page,
     title: "LearnMate",
+    subtitle: "Revolutionising career growth through personalised learning journeys.",
     thumbnail: img1,
-    cardStyle: {background: '#E6F7FC'},
+    cardBackground: '#E6F7FC'
 }
