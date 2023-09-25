@@ -11,19 +11,20 @@ export function ProjectsGrid({children}: { children: React.ReactNode }) {
 }
 
 
-export function ProjectCard({title, url, thumbnail, cardStyle}: {
+export function ProjectCard({title, subtitle, url, thumbnail, cardStyle}: {
     title: string,
+    subtitle: string,
     url: string,
     thumbnail: StaticImageData | string,
     cardStyle: CSSProperties | undefined
 }) {
-    return <a href={url} className={styles.card}>
-        <div className={styles.cardThumbnailContainer} style={cardStyle}>
-            {/*<img src={thumbnailSrc} alt="" />*/}
-            <Image className={styles.cardThumbnail} src={thumbnail} alt=""/>
+    return <a href={url} className={styles.gridItem}>
+        <div className={styles.thumbnailContainer} style={cardStyle}>
+            <Image className={styles.thumbnailImg} src={thumbnail} alt=""/>
         </div>
-        <div className={styles.cardTitle}>
-            <span>{title}</span>
+        <div className={styles.info}>
+            <div className={styles.title}>{title}</div>
+            <div className={styles.subtitle}>{subtitle}</div>
         </div>
     </a>
 }

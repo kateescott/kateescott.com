@@ -4,15 +4,18 @@ import {getAllProjects} from "@/app/_projects/project";
 
 export default function Home() {
     return (
-        <main className="pageContent">
-            <Hero>
-                <h2>Hi, I’m Kate 👋</h2>
-                <p>I’m a UX/UI Designer based in Sydney</p>
-            </Hero>
+        <main>
+            <div className="pageContent">
+                <Hero>
+                    <h2>Hi, I’m Kate 👋</h2>
+                    <p>I’m a UX/UI Designer based in Sydney</p>
+                </Hero>
+            </div>
             <ProjectsGrid>
                 {getAllProjects().map((project) => (
                     <ProjectCard
                         title={project.title}
+                        subtitle={project.subtitle}
                         key={project.slug}
                         url={'/projects/' + project.slug}
                         thumbnail={project.thumbnail}
@@ -20,9 +23,6 @@ export default function Home() {
                     />
                 ))}
             </ProjectsGrid>
-            <div className="pageContent__footer">
-                <a href="/projects/">See more &rarr;</a>
-            </div>
         </main>
     )
 }

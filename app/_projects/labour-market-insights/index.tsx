@@ -25,7 +25,7 @@ function Page() {
             <section className={styles.section}>
                 <ProjectInfo
                     title={labourMarketInsights.title}
-                    subtitle="Empowering informed policy decisions for a thriving workforce."
+                    subtitle={labourMarketInsights.subtitle}
                     description={
                         <p>Faethm by Pearson's labour market insights offering simplifies data access and enhances the
                             customer experience. The project seamlessly migrates workforce information from Tableau to
@@ -84,11 +84,11 @@ function Page() {
                     </div>
                 </section>
                 <section className={styles.section}>
-                <Carousel backgroundColor="rgba(255, 238, 204, 0.5)" items={[
-                    {src: labourmarketinsightspersona, alt: '', backgroundColor: '#F5FCFC'},
-                    {src: lmi2, alt: '', backgroundColor: '#FFF9FA'},
-                ]}/>
-            </section>
+                    <Carousel backgroundColor="rgba(255, 238, 204, 0.5)" items={[
+                        {src: labourmarketinsightspersona, alt: '', backgroundColor: '#F5FCFC'},
+                        {src: lmi2, alt: '', backgroundColor: '#FFF9FA'},
+                    ]}/>
+                </section>
 
                 <section className={styles.section}>
                     <div className={styles.text}>
@@ -101,7 +101,8 @@ function Page() {
                     </div>
                 </section>
                 <section className={styles.section}>
-                    <div className={classNames(styles.text, styles.highlight)}  style={{background: '#FFF9FA',color: '#993D4F'}}>
+                    <div className={classNames(styles.text, styles.highlight)}
+                         style={{background: '#FFF9FA', color: '#993D4F'}}>
                         {/* TO DO */}
                         <p>
                             How might we empower government clients with informed policy decisions for a thriving
@@ -210,6 +211,7 @@ function Page() {
 export const labourMarketInsights: Project = {
     Page: Page,
     title: "Labour Market Insights",
+    subtitle: "Empowering informed policy decisions for a thriving workforce.",
     thumbnail: labourmarketinsights,
     cardStyle: {background: '#28B0A5'},
 }

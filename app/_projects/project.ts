@@ -13,6 +13,7 @@ import {assaya} from "@/app/_projects/assaya";
 export type Project = {
     Page: React.ComponentType<{}>;
     title: string,
+    subtitle: string,
     thumbnail: string | StaticImageData,
     cardStyle?: CSSProperties,
 }

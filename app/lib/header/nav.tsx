@@ -17,8 +17,7 @@ export function Nav() {
                     <a href="/" className={classNames(styles.menubar__item, styles.menubar__itemBrand)}>kateescott.</a>
                 </div>
                 <div className={styles.menubar__items}>
-                    <MenuItem href="/">Home</MenuItem>
-                    <MenuItem href="/projects/">Projects</MenuItem>
+                    <MenuItem href="/">Projects</MenuItem>
                 </div>
             </nav>
         </Container>
