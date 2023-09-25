@@ -141,7 +141,7 @@ export default function OntologyMappingProject() {
                     <h4 className={styles.title}>User Profile</h4>
                     <p>
                     Through research, a persona named Fei Fei, representing a typical user, was developed to gain deeper insights into the needs, preferences, and behaviours of the target audience. Fei Fei's job responsibilities include creating and retaining a consistent supply of top talent, reviewing job details, and providing quarterly people analytic reporting.</p>
-                    <p>We discovered that Fei Fei often had to rely on spreadsheets and manual data cleaning processes to align the company's data with the platform.</p>                    
+                    <p>We discovered that Fei Fei often had to rely on spreadsheets and manual data cleaning processes to align the company's data with the platform.</p>
                 </div>
             </section>
             <section className={styles.section}>
@@ -149,14 +149,25 @@ export default function OntologyMappingProject() {
                     <img className={styles.image} src={om12.src} alt="" height="480"/>
                 </div>
             </section>
-        
-          
-            <section className={styles.section}>
+
+
+            <section className={styles.section} style={{ marginBottom: '0px'}}>
                 <div className={styles.text}>
                     <h4 className={styles.title}>Recommendations</h4>
                     <p>
                     To improve operational efficiency and deliver a more user-friendly experience, the team ask this question:
                     </p>
+                </div>
+            </section>
+            <section className={styles.section} style={{marginTop: '32px', marginBottom: '32px'}}>
+                <div className={classNames(styles.text, styles.highlight)} style={{paddingTop: '32px', paddingBottom: '32px' }}>
+                    <p>
+                        "How might we enable clients to quickly and efficiently access insights on and get value from our platform?"
+                    </p>
+                </div>
+            </section>
+            <section className={styles.section} style={{marginTop: 0}}>
+                <div className={styles.text}>
                     <p>The following recommendations were proposed:</p>
                     <ol className={styles.list}>
                         <li>Automated error detection: To address the finding that users spend significant time troubleshooting data discrepancies, the implementation of an automated error detection feature, could assist the company to enhance operational efficiency by reducing resource-intensive manual processing.
@@ -170,19 +181,6 @@ export default function OntologyMappingProject() {
                     </ol>
                 </div>
             </section>
-
-
-
-            <section className={styles.section}>
-                <div className={classNames(styles.text, styles.highlight)}>
-                    <p>
-                        "How might we enable clients to quickly and efficiently access insights on and get value from our platform?"
-                    </p>
-                </div>
-            </section>
-
-           
-
             <section className={styles.section}>
                 <div className={styles.text}>
                     <h4 className={styles.title}>Conceptualisation</h4>
@@ -285,7 +283,7 @@ export default function OntologyMappingProject() {
                     </ol>
                 </div>
             </section>
-  
+
         </ProjectLayout>
     );
 }
