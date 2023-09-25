@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     title: 'Kate Scott',
     description: 'TODO?',
     verification: {google: "bb2q1CzZpW4fJosteb18nss_Pw2q2hDD3KwRdiXtJpE"},
+    viewport: "width=device-width, initial-scale=1",
 }
 
 export default function RootLayout({children}: { children: React.ReactNode }) {

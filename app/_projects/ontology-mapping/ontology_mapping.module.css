@@ -3,7 +3,7 @@
 }
 
 .imageCard {
-    padding: 64px 84px;
+    padding: 16px 16px;
     border-radius: 8px;
     position: relative;
 }
@@ -74,4 +74,19 @@
 .list {
     list-style: auto;
     margin-left: 16px;
+}
+
+@media screen and (max-width: 600px) {
+    .section {
+        margin: 48px 0;
+    }
+
+    .text {
+        padding: 0 0;
+    }
+
+    .text.highlight {
+        padding: 64px;
+    }
+
 }
