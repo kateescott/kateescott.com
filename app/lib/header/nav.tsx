@@ -18,6 +18,7 @@ export function Nav() {
                 </div>
                 <div className={styles.menubar__items}>
                     <MenuItem href="/">Projects</MenuItem>
+                    <MenuItem href="https://www.linkedin.com/in/kateescott/" target="_blank">LinkedIn</MenuItem>
                 </div>
             </nav>
         </Container>
@@ -25,13 +26,13 @@ export function Nav() {
 }
 
 
-function MenuItem({href, children}: { href: string, children: React.ReactNode }) {
+function MenuItem({href, children, ...props}: { href: string, children: React.ReactNode } & Partial<React.ComponentProps<typeof Link>>) {
     const path = usePathname();
     const isSubpath = href === '/' ? href === path : path.startsWith(href);
 
     return (
         <Link href={href} className={classNames(styles.menubar__item, {
             [styles.menubar__itemActive]: isSubpath
-        })}>{children}</Link>
+        })} {...props}>{children}</Link>
     )
 }
