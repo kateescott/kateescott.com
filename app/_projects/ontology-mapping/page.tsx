@@ -41,7 +41,7 @@ export default function OntologyMappingProject() {
                     subtitle="Empowering insights through unified client data mapping."
                     description={
                         <>
-                            <p>Faethm by Pearson's occupation mapping is transforming how organisations leverage skills and jobs data. It provides organisations with a comprehensive understanding of their workforce by seamlessly bridging the gap between disparate data sources.</p>
+                            <p>Faethm by Pearson&apos;s occupation mapping is transforming how organisations leverage skills and jobs data. It provides organisations with a comprehensive understanding of their workforce by seamlessly bridging the gap between disparate data sources.</p>
                         </>
                     }
                     organization="Faethm by Pearson"
@@ -58,7 +58,7 @@ export default function OntologyMappingProject() {
                 <div className={styles.text}>
                     <h4 className={styles.title}>The Problem</h4>
                     <p>
-                    A HR manager responsible for inputting organisational data into our system faces the cumbersome and time-consuming task of manual data entry and validation. This hinders their ability to fully utilise the platform's value until this task is completed, which can take anywhere from 90 to 120 business days.
+                    A HR manager responsible for inputting organisational data into our system faces the cumbersome and time-consuming task of manual data entry and validation. This hinders their ability to fully utilise the platform&apos;s value until this task is completed, which can take anywhere from 90 to 120 business days.
                     </p>
                 </div>
             </section>
@@ -79,7 +79,7 @@ export default function OntologyMappingProject() {
                 <div className={styles.text}>
                     <h4 className={styles.title}>User Research</h4>
                     <p>
-                    Insights from internal and external interviews were gathered to understand the organisation's internal processes, goals, challenges, as well as end users' experiences, challenges, and expectations. These insights guided the discovery and development process, ensuring the end product addressed pain points, streamlined operations, and optimised user experiences.
+                    Insights from internal and external interviews were gathered to understand the organisation&apos;s internal processes, goals, challenges, as well as end users&apos; experiences, challenges, and expectations. These insights guided the discovery and development process, ensuring the end product addressed pain points, streamlined operations, and optimised user experiences.
                     </p>
                 </div>
             </section>
@@ -130,8 +130,8 @@ export default function OntologyMappingProject() {
                     <ol className={styles.list}>
                         <li>The manual job matching process and troubleshooting of data discrepancies are resource-intensive and time-consuming for users. The heavy reliance on the ontology manager for these tasks suggests an opportunity to streamline and automate these processes to improve user efficiency and reduce operational overhead.</li>
                         <li>The lengthy validation process, primarily caused by manual job matching and low-confidence role reviews, presents a critical bottleneck in the onboarding process. This finding highlights the need to implement a more efficient, and automated validation procedure to expedite the onboarding of users onto the platform and reduce time-to-value.</li>
-                        <li>Unforeseen data changes by clients can impact platform readiness, highlighting the importance of enhancing the platform's adaptability and data management capabilities. This finding shows the need to develop strategies to handle and accommodate such changes more effectively to ensure a smoother onboarding process for clients.</li>
-                        <li>The finding that users' struggle to grasp the ontology indicates a potential barrier to successful onboarding. This emphasises the need to improve user training and documentation regarding the ontology, as well as possibly simplifying or providing additional support for users who may not have prior experience.</li>
+                        <li>Unforeseen data changes by clients can impact platform readiness, highlighting the importance of enhancing the platform&apos;s adaptability and data management capabilities. This finding shows the need to develop strategies to handle and accommodate such changes more effectively to ensure a smoother onboarding process for clients.</li>
+                        <li>The finding that users&apos; struggle to grasp the ontology indicates a potential barrier to successful onboarding. This emphasises the need to improve user training and documentation regarding the ontology, as well as possibly simplifying or providing additional support for users who may not have prior experience.</li>
                     </ol>
                 </div>
             </section>
@@ -139,9 +139,8 @@ export default function OntologyMappingProject() {
             <section className={styles.section}>
                 <div className={styles.text}>
                     <h4 className={styles.title}>User Profile</h4>
-                    <p>
-                    Through research, a persona named Fei Fei, representing a typical user, was developed to gain deeper insights into the needs, preferences, and behaviours of the target audience. Fei Fei's job responsibilities include creating and retaining a consistent supply of top talent, reviewing job details, and providing quarterly people analytic reporting.</p>
-                    <p>We discovered that Fei Fei often had to rely on spreadsheets and manual data cleaning processes to align the company's data with the platform.</p>
+                    <p>Through research, a persona named Fei Fei, representing a typical user, was developed to gain deeper insights into the needs, preferences, and behaviours of the target audience. Fei Fei&apos;s job responsibilities include creating and retaining a consistent supply of top talent, reviewing job details, and providing quarterly people analytic reporting.</p>
+                    <p>We discovered that Fei Fei often had to rely on spreadsheets and manual data cleaning processes to align the company&apos;s data with the platform.</p>
                 </div>
             </section>
             <section className={styles.section}>
@@ -162,7 +161,7 @@ export default function OntologyMappingProject() {
             <section className={styles.section} style={{marginTop: '32px', marginBottom: '32px'}}>
                 <div className={classNames(styles.text, styles.highlight)} style={{paddingTop: '32px', paddingBottom: '32px' }}>
                     <p>
-                        "How might we enable clients to quickly and efficiently access insights on and get value from our platform?"
+                        &rdquo;How might we enable clients to quickly and efficiently access insights on and get value from our platform?&ldquo;
                     </p>
                 </div>
             </section>
@@ -222,7 +221,7 @@ export default function OntologyMappingProject() {
                         </li>
                         <li>Self-serve ontology framework: Recognising that some users find it challenging to understand the ontology framework, we have created a resources area on the platform where users can explore and comprehend the standardised occupation ontology through detailed explanations of the ontology classifications. This feature facilitates informed decision-making and empowers users with better understanding.
                         </li>
-                        <li>Self-serve client resources: In line with the recommendation to improve user training and documentation, we have introduced documentation on the resources section of the platform where users have access to comprehensive documentation and FAQs, reducing the learning curve and enabling them to maximise the platform's value independently.
+                        <li>Self-serve client resources: In line with the recommendation to improve user training and documentation, we have introduced documentation on the resources section of the platform where users have access to comprehensive documentation and FAQs, reducing the learning curve and enabling them to maximise the platform&apos;s value independently.
                         </li>
                     </ol>
                 </div>
@@ -246,7 +245,7 @@ export default function OntologyMappingProject() {
                 <div className={styles.text}>
                     <h4 className={styles.title}>Summary</h4>
                     <p>
-                    By addressing the challenges of data onboarding, Faethm by Pearson's Ontology Mapping revolutionises how organisations leverage skills and jobs data, providing users with a seamless and efficient experience.</p>
+                    By addressing the challenges of data onboarding, Faethm by Pearson&apos;s Ontology Mapping revolutionises how organisations leverage skills and jobs data, providing users with a seamless and efficient experience.</p>
                     <p>For instance, HR Managers can now onboard their data in as little as a few minutes to a few hours (depending on dataset size), a substantial improvement from the previous average of 90 business days, thanks to the implementation of the automated validation processes. </p>
                     <p>This remarkable reduction in onboarding time empowers organisations to access their workforce data in a more timely manner, enabling them to make faster, data-driven decisions and enhance their overall operational agility.</p>
                 </div>

@@ -149,11 +149,11 @@ function Page() {
                         communities:
                     </p>
                     <ol className={styles.list}>
-                        <li>Augment Assaya's dashboard for real-time monitoring.
+                        <li>Augment Assaya&apos;s dashboard for real-time monitoring.
                         </li>
-                        <li>Optimise Assaya's dashboard for efficient test result tracking.
+                        <li>Optimise Assaya&apos;s dashboard for efficient test result tracking.
                         </li>
-                        <li>Expand Assaya's resources for partner NGOs.
+                        <li>Expand Assaya&apos;s resources for partner NGOs.
                         </li>
                     </ol>
                 </div>
@@ -184,7 +184,7 @@ function Page() {
                         the spread of HIV/AIDS in remote Aboriginal communities. Key elements of the solution include:
                     </p>
                     <ol className={styles.list}>
-                        <li>Enhanced dashboard: Assaya's dashboard will provide real-time monitoring capabilities,
+                        <li>Enhanced dashboard: Assaya&apos;s dashboard will provide real-time monitoring capabilities,
                             allowing NGOs to track and analyse data related to HIV/AIDS prevalence, testing, and
                             intervention outcomes.
                         </li>

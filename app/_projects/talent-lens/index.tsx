@@ -21,9 +21,9 @@ function Page() {
                     title={talentLens.title}
                     subtitle={talentLens.subtitle}
                     description={
-                        <p>Pearson's TalentLens is a comprehensive portfolio of psychometrics assessment solutions
+                        <p>Pearson&apos;s TalentLens is a comprehensive portfolio of psychometrics assessment solutions
                             designed to help organisations identify, develop, and retain top talent. The project aims to
-                            enhances the user interface of Pearson's TalentLens portfolio to improve user engagement and
+                            enhances the user interface of Pearson&apos;s TalentLens portfolio to improve user engagement and
                             maximise the effectiveness of talent assessment tools.</p>
                     }
                     organization="Pearson"

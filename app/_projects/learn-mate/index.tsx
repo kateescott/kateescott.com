@@ -72,7 +72,7 @@ function Page() {
                     </p>
                     <ol className={styles.list}>
                         <li>Personalisation and relevance: The UI design aimed to provide personalised learning
-                            experiences by adapting to each user's skills, occupation history, and career goals. This
+                            experiences by adapting to each user&apos;s skills, occupation history, and career goals. This
                             involved dynamically generating learning playlists based on individual preferences, ensuring
                             the content remains relevant and aligned with their professional growth.
                         </li>
@@ -98,7 +98,7 @@ function Page() {
                 <div className={styles.text}>
                     <h4 className={styles.title}>Summary</h4>
                     <p>
-                        By implementing these design principles, Pearson LearnMate's UI enhancement focused on creating
+                        By implementing these design principles, Pearson LearnMate&apos;s UI enhancement focused on creating
                         a user-centric platform that revolutionises career growth, promotes continuous learning, and
                         empowers individuals to pursue their professional aspirations effectively.
                     </p>

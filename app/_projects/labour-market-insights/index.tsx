@@ -27,7 +27,7 @@ function Page() {
                     title={labourMarketInsights.title}
                     subtitle={labourMarketInsights.subtitle}
                     description={
-                        <p>Faethm by Pearson's labour market insights offering simplifies data access and enhances the
+                        <p>Faethm by Pearson&apos;s labour market insights offering simplifies data access and enhances the
                             customer experience. The project seamlessly migrates workforce information from Tableau to
                             the Faethm platform, providing users with efficient access to essential information.</p>
                     }

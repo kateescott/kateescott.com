@@ -112,11 +112,11 @@ function Page() {
                 <div className={styles.text}>
                     <h4 className={styles.title}>User Profile</h4>
                     <p>
-                        To gain a deeper understanding of our target audience, we've created three distinct user
-                        personas. First, there's Robert, a seasoned Chief Human Resource Officer (CHRO) tasked with
+                        To gain a deeper understanding of our target audience, we&apos;ve created three distinct user
+                        personas. First, there&apos;s Robert, a seasoned Chief Human Resource Officer (CHRO) tasked with
                         making strategic decisions for the organisation based on complex HR data. Then, meet Fei Fei,
                         the Generalist HR Manager, who juggles a wide range of HR functions and seeks efficient
-                        data-driven solutions for HR processes. Finally, there's Daniela, the skilled Data Analyst, who
+                        data-driven solutions for HR processes. Finally, there&apos;s Daniela, the skilled Data Analyst, who
                         specialises in handling intricate datasets and extracting valuable insights.
                     </p>
                     <p>
@@ -143,7 +143,7 @@ function Page() {
                         <li>Implement consistent design elements and visual cues to ensure visualisations are easily
                             interpretable and comparable.
                         </li>
-                        <li>Optimise the library's performance to handle large datasets efficiently and provide
+                        <li>Optimise the library&apos;s performance to handle large datasets efficiently and provide
                             real-time rendering.
                         </li>
                         <li>Simplify the configuration process by offering intuitive controls and providing smart
@@ -195,7 +195,7 @@ function Page() {
                     <ol className={styles.list}>
                         <li>Convey information: colours simplify complex data and make it memorable.</li>
                         <li>Highlight patterns: thoughtful layout design guides viewers to discern patterns
-                            effortlessly, ensuring critical insights aren't missed.
+                            effortlessly, ensuring critical insights aren&apos;t missed.
                         </li>
                         <li>Differentiate data points: Styling choices like fonts and shapes help users distinguish data
                             categories, making information interpretation more intuitive.
@@ -217,20 +217,20 @@ function Page() {
                     <h4 className={styles.title}>The Solution</h4>
                     <p>
                         Our data visualisation library offers a holistic solution to the challenges faced by data
-                        analysts and researchers. It's designed to provide an accurate, helpful, and scalable
+                        analysts and researchers. It&apos;s designed to provide an accurate, helpful, and scalable
                         visualisation tool that empowers users.
                     </p>
                     <ol className={styles.list}>
                         <li>Wide range of visualisations: The library has a comprehensive collection of visualisations,
                             both static and interactive, allowing users to interpret their data accurately.
                         </li>
-                        <li>User-friendly interface: We've crafted an intuitive interface that guides users through the
+                        <li>User-friendly interface: We&apos;ve crafted an intuitive interface that guides users through the
                             visualisation process while offering customisation options.
                         </li>
                         <li>Consistency and performance: Ensuring that design elements are consistent across different
                             visualisations and platforms guarantees accurate interpretation and scalability.
                         </li>
-                        <li>Documentation and support: We'll provide extensive documentation and support resources to
+                        <li>Documentation and support: We&apos;ll provide extensive documentation and support resources to
                             help the team make the most of the library.
                         </li>
                     </ol>
