@@ -1,9 +1,5 @@
 import {ontologyMapping} from "@/app/_projects/ontology-mapping";
 import {StaticImageData} from "next/image";
-import {warmTunas} from "@/app/_projects/legacy/100_warm_tunas";
-import {coffeeBreak} from "@/app/_projects/legacy/coffee-break";
-import {elderAbuseNetwork} from "@/app/_projects/legacy/elder-abuse-network";
-import {CSSProperties} from "react";
 import {labourMarketInsights} from "@/app/_projects/labour-market-insights";
 import {talentLens} from "@/app/_projects/talent-lens";
 import {dataVisualisationLibrary} from "@/app/_projects/data-visualisation-library";
@@ -26,11 +22,6 @@ const PROJECTS: { [key: string]: Project } = {
     'talent-lens': talentLens,
     'learn-mate': learnMate,
     'data-visualization-library': dataVisualisationLibrary,
-
-    // Legacy
-    // '100-warm-tunas': warmTunas,
-    // 'coffee-break': coffeeBreak,
-    // 'elder-abuse-network': elderAbuseNetwork,
 }
 
 export function getProjectSlugs(): string[] {
