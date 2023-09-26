@@ -19,14 +19,8 @@
 .description {
     font-size: 20px;
     font-weight: 400;
-    color: #808080; /* Dark/50 */
+    color: #676767;
     margin-top: 56px;
-}
-
-.description {
-    font-size: 20px;
-    font-weight: 400;
-    color: #808080 /* Dark/50 */
 }
 
 .attributes {
@@ -36,7 +30,7 @@
 
 .attributes * {
     margin-right: 32px;
-    color: #808080 /* Dark/50 */
+    color: #676767;
 }
 
 .attributeLabel{

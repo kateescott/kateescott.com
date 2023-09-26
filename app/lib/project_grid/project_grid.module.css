@@ -9,7 +9,7 @@
 .gridItem {
     display: block;
     text-decoration: none;
-    color: black;
+    color: #171717;
 }
 
 .info {
@@ -24,7 +24,7 @@
 
 .info .subtitle {
     font-size: 14px;
-    color: #999999;
+    color: #676767;
 }
 
 .thumbnailBackdrop {
