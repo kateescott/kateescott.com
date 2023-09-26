@@ -28,7 +28,7 @@ export function ProjectCard({title, subtitle, url, thumbnail, backgroundColor}: 
             '--pgitem-background': backgroundColor,
             '--pgitem-background-hover': darken(backgroundColor, 20),
         }}>
-            <Image className={styles.thumbnailImg} src={thumbnail} alt=""/>
+            <Image className={styles.thumbnailImg} src={thumbnail} alt="" placeholder="blur"/>
         </div>
         <div className={styles.info}>
             <div className={styles.title}>{title}</div>

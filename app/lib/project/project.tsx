@@ -53,7 +53,7 @@ export function SimpleProjectLayout({
                 <div className="pageContent__assetList">
                     {gallery.media.map((media, i) => (
                         <div className="pageContent__asset" style={cardStyle} key={i}>
-                            <Image className="pageContent__assetImage" src={media} alt=""/>
+                            <Image className="pageContent__assetImage" src={media} alt="" placeholder="blur"/>
                         </div>
                     ))}
                 </div>

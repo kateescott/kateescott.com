@@ -35,7 +35,7 @@ function Page() {
             </section>
             <section className={styles.section}>
                 <div className={styles.imageCard} style={{background: '#005850'}}>
-                    <Image src={img1} className={styles.image} alt=""/>
+                    <Image src={img1} className={styles.image} alt="" placeholder="blur"/>
                 </div>
             </section>
             <section className={styles.section}>
@@ -80,7 +80,7 @@ function Page() {
             </section>
             <section className={styles.section}>
                 <div className={styles.imageCard} style={{background: '#BCDCD6'}}>
-                    <Image src={img2} className={styles.image} alt=""/>
+                    <Image src={img2} className={styles.image} alt="" placeholder="blur"/>
                 </div>
             </section>
             <section className={styles.section}>

@@ -3,7 +3,7 @@ import styles from "@/app/_projects/ontology-mapping/ontology_mapping.module.css
 import {ProjectInfo} from "@/app/lib/project_info/project_info";
 import React from "react";
 import {ProjectLayout} from "@/app/lib/project/project";
-import {Carousel, CarouselItem, Lightbox} from "@/app/lib/carousel/carousel";
+import {Carousel} from "@/app/lib/carousel/carousel";
 import classNames from "classnames";
 import assaya1 from './assets/assaya1.png';
 import assaya2 from './assets/assaya2.png';
@@ -44,7 +44,7 @@ function Page() {
             </section>
             <section className={styles.section}>
                 <div className={styles.imageCard} style={{background: '#519F85'}}>
-                    <Image src={assayadashboard} className={styles.image} alt=""/>
+                    <Image src={assayadashboard} className={styles.image} alt="" placeholder="blur"/>
                 </div>
             </section>
             <section className={styles.section}>

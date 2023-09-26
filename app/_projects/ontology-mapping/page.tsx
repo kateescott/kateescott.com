@@ -30,7 +30,7 @@ import Image from 'next/image'
 import styles from './ontology_mapping.module.css';
 import classNames from "classnames";
 import React from "react";
-import {Carousel, CarouselItem, Lightbox, TextCarousel} from "@/app/lib/carousel/carousel";
+import {Carousel, TextCarousel} from "@/app/lib/carousel/carousel";
 
 export default function OntologyMappingProject() {
     return (
@@ -51,7 +51,7 @@ export default function OntologyMappingProject() {
             </section>
             <section className={styles.section}>
                 <div className={styles.imageCard} style={{background: '#004E66'}}>
-                    <Image src={omcover} className={styles.image} alt="" fill={false}/>
+                    <Image src={omcover} className={styles.image} alt="" placeholder="blur"/>
                 </div>
             </section>
             <section className={styles.section}>
@@ -117,7 +117,7 @@ export default function OntologyMappingProject() {
 
             <section className={styles.section}>
                 <div className={styles.imageCard} style={{background: '#F9F9F9'}}>
-                    <Image src={ontologymap} className={styles.image} alt=""/>
+                    <Image src={ontologymap} className={styles.image} alt="" placeholder="blur"/>
                 </div>
             </section>
 
@@ -145,7 +145,7 @@ export default function OntologyMappingProject() {
             </section>
             <section className={styles.section}>
                 <div className={styles.imageCard} style={{background: '#F0FAFD'}}>
-                    <Image src={om12} className={styles.image} alt=""/>
+                    <Image src={om12} className={styles.image} alt="" placeholder="blur"/>
                 </div>
             </section>
 

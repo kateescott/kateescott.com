@@ -126,10 +126,10 @@ export function TextCarousel({backgroundColor, items}: {
 export function CarouselItem({alt, src, caption}: { alt: string, src: StaticImageData, caption: string | undefined }) {
     return (
         <div className={styles.item}>
-            <div>
-                <div className={styles.itemImgContainer}>
-                    <a href={src.src} target="_blank"><Image fill={true} alt={alt} src={src} style={{objectFit: "contain"}}/></a>
-                </div>
+            <div className={styles.itemImgContainer}>
+                <a href={src.src} target="_blank">
+                    <Image className={styles.image} alt={alt} src={src} placeholder="blur"/>
+                </a>
             </div>
             {caption && <div className={styles.caption}>{caption}</div>}
         </div>
@@ -141,22 +141,6 @@ export function TextCarouselItem({text, cite}: { text: string, cite: string }) {
         <div className={classNames(styles.item, styles.textItem)}>
             <blockquote>{text}</blockquote>
             <cite>{cite}</cite>
-        </div>
-    )
-}
-
-export function Lightbox({src, alt}: { src: string | StaticImport, alt: string }) {
-    useEffect(() => {
-        document.body.style.overflowY = 'hidden';
-        return () => {
-            document.body.style.overflowY = 'auto';
-        }
-    })
-    return (
-        <div className={styles.lightbox} onClick={() => console.log("CLOSe")}>
-            <div className={styles.lightboxInner}>
-                <Image placeholder="blur" loading="eager" alt={alt} style={{objectFit: "contain"}} src={src}/>
-            </div>
         </div>
     )
 }

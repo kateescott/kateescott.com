@@ -47,7 +47,7 @@ function Page() {
             </section>
             <section className={styles.section}>
                 <div className={styles.imageCard} style={{background: '#008079'}}>
-                    <Image src={coverImg} className={styles.image} alt=""/>
+                    <Image src={coverImg} className={styles.image} alt="" placeholder="blur"/>
                 </div>
             </section>
             <section className={styles.section}>
