@@ -11,6 +11,7 @@ import {Container} from "@/app/lib/container/container";
 const dmSans = DM_Sans({weight: ['400', '500', '700'], subsets: ['latin']})
 
 export const metadata: Metadata = {
+    metadataBase: new URL('https://portfolio.kateescott.com'),
     title: 'Kate Scott | UX/UI Designer',
     description: 'Designing innovative solutions that are delightful, inspiring and intuitive ✨',
     verification: {google: "bb2q1CzZpW4fJosteb18nss_Pw2q2hDD3KwRdiXtJpE"},

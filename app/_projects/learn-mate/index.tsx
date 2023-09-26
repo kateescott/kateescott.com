@@ -6,6 +6,8 @@ import {ProjectLayout} from "@/app/lib/project/project";
 import workforceSummaryImg from "@/app/_projects/ontology-mapping/assets/workforce_summary.png";
 import img1 from './assets/img1.png'
 import img2 from './assets/img2.png'
+import om12 from "@/app/_projects/ontology-mapping/assets/om12.png";
+import Image from "next/image";
 
 
 function Page() {
@@ -28,7 +30,7 @@ function Page() {
             </section>
             <section className={styles.section}>
                 <div className={styles.imageCard} style={{background: '#E6F7FC'}}>
-                    <img className={styles.image} src={img1.src} alt="" height="480"/>
+                    <Image src={img1} className={styles.image} alt=""/>
                 </div>
             </section>
             <section className={styles.section}>
@@ -91,7 +93,7 @@ function Page() {
             </section>
             <section className={styles.section}>
                 <div className={styles.imageCard} style={{background: '#E6F7FC'}}>
-                    <img className={styles.image} src={img2.src} alt="" height="700px"/>
+                    <Image src={img2} className={styles.image} alt=""/>
                 </div>
             </section>
             <section className={styles.section}>

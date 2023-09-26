@@ -17,6 +17,8 @@ import lmicarousel8 from './assets/lmi-carousel8.png'
 import lmi2 from './assets/lmi-2.png'
 
 import {Carousel, CarouselItem, Lightbox} from "@/app/lib/carousel/carousel";
+import om12 from "@/app/_projects/ontology-mapping/assets/om12.png";
+import Image from "next/image";
 
 
 function Page() {
@@ -39,7 +41,7 @@ function Page() {
             <section>
                 <section className={styles.section}>
                     <div className={styles.imageCard} style={{background: '#28B0A5'}}>
-                        <img className={styles.image} src={labourmarketinsights.src} alt="" height="480"/>
+                        <Image src={labourmarketinsights} className={styles.image} alt=""/>
                     </div>
                 </section>
                 <section className={styles.section}>

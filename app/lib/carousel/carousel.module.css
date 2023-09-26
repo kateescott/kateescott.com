@@ -165,5 +165,14 @@
     .caption {
         display: none;
     }
+    .item {
+        padding: 44px;
+    }
+    .next {
+        right: 4px;
+    }
+    .prev {
+        left: 4px;
+    }
 }
 

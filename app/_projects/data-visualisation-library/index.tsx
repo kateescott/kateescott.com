@@ -23,6 +23,8 @@ import solution4 from './assets/solution4.png';
 import classNames from "classnames";
 import {Carousel} from "@/app/lib/carousel/carousel";
 import workforceMappingImg from "@/app/_projects/ontology-mapping/assets/workforce_mapping.png";
+import om12 from "@/app/_projects/ontology-mapping/assets/om12.png";
+import Image from "next/image";
 
 
 function Page() {
@@ -45,7 +47,7 @@ function Page() {
             </section>
             <section className={styles.section}>
                 <div className={styles.imageCard} style={{background: '#008079'}}>
-                    <img className={styles.image} src={coverImg.src} alt="" height="480"/>
+                    <Image src={coverImg} className={styles.image} alt=""/>
                 </div>
             </section>
             <section className={styles.section}>

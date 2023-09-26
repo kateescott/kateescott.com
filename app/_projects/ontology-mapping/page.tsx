@@ -51,7 +51,7 @@ export default function OntologyMappingProject() {
             </section>
             <section className={styles.section}>
                 <div className={styles.imageCard} style={{background: '#004E66'}}>
-                    <img className={styles.image} src={omcover.src} alt="" height="480"/>
+                    <Image src={omcover} className={styles.image} alt="" fill={false}/>
                 </div>
             </section>
             <section className={styles.section}>
@@ -117,7 +117,7 @@ export default function OntologyMappingProject() {
 
             <section className={styles.section}>
                 <div className={styles.imageCard} style={{background: '#F9F9F9'}}>
-                    <img className={styles.image} src={ontologymap.src} alt="" height="480"/>
+                    <Image src={ontologymap} className={styles.image} alt=""/>
                 </div>
             </section>
 
@@ -145,7 +145,7 @@ export default function OntologyMappingProject() {
             </section>
             <section className={styles.section}>
                 <div className={styles.imageCard} style={{background: '#F0FAFD'}}>
-                    <img className={styles.image} src={om12.src} alt="" height="480"/>
+                    <Image src={om12} className={styles.image} alt=""/>
                 </div>
             </section>
 

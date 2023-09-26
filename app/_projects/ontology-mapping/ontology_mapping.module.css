@@ -3,13 +3,14 @@
 }
 
 .imageCard {
-    padding: 16px 16px;
+    padding: 64px;
     border-radius: 8px;
-    position: relative;
 }
 
 .image {
     width: 100%;
+    height: auto;
+    max-height: 600px;
     object-fit: contain;
 }
 
@@ -92,7 +93,13 @@
     }
 
     .text.highlight {
-        padding: 64px;
+        padding: 32px;
     }
 
+    .text.hero p {
+        font-size: 18px;
+    }
+    .imageCard {
+        padding: 32px;
+    }
 }

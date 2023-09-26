@@ -21,6 +21,8 @@ import assaya15 from './assets/assaya15.png';
 import assaya16 from './assets/assaya16.png';
 import assaya17 from './assets/assaya17.png';
 import assayadashboard from './assets/assayadashboard.png';
+import om12 from "@/app/_projects/ontology-mapping/assets/om12.png";
+import Image from "next/image";
 
 
 function Page() {
@@ -42,7 +44,7 @@ function Page() {
             </section>
             <section className={styles.section}>
                 <div className={styles.imageCard} style={{background: '#519F85'}}>
-                    <img className={styles.image} src={assayadashboard.src} alt="" height="480"/>
+                    <Image src={assayadashboard} className={styles.image} alt=""/>
                 </div>
             </section>
             <section className={styles.section}>
