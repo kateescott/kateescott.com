@@ -7,6 +7,8 @@ import {DM_Sans} from 'next/font/google'
 import {Nav} from "@/app/lib/header/nav";
 import {Footer} from "@/app/lib/footer/footer";
 import {Container} from "@/app/lib/container/container";
+import React from "react";
+import Script from "next/script";
 
 const dmSans = DM_Sans({weight: ['400', '500', '700'], subsets: ['latin']})
 
@@ -22,6 +24,16 @@ export default function RootLayout({children}: { children: React.ReactNode }) {
     return (
         <html lang="en">
         <body className={dmSans.className}>
+        <Script async src="https://www.googletagmanager.com/gtag/js?id=G-6XEX9MWK67"></Script>
+        <Script id="google-analytics">
+            {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-6XEX9MWK67');
+            `}
+        </Script>
         <Nav/>
         <Container>
             {children}
