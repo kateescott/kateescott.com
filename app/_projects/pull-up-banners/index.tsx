@@ -1,11 +1,11 @@
 import type {Project} from "@/app/_projects/project";
 import Page from './page';
-import omcover from './assets/omcover.png';
+import pu1 from './assets/pu1.png';
 
 export const pullUpBanners: Project = {
     Page: Page,
     title: "Industry Events Banners",
-    subtitle: "Crafting compelling marketing assets for event promotion",
-    thumbnail: omcover,
+    subtitle: "Crafting compelling marketing assets for event promotion.",
+    thumbnail: pu1,
     cardBackground: '#33C4BD',
 }

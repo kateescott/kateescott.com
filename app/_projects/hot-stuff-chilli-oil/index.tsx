@@ -1,11 +1,11 @@
 import type {Project} from "@/app/_projects/project";
 import Page from './page';
-import omcover from './assets/omcover.png';
+import co1 from './assets/co1.png';
 
 export const hotStuffChilliOil: Project = {
     Page: Page,
     title: "Hot Stuff Chilli Oil 🌶️",
-    subtitle: "Homemade chilli oil branding and label design",
-    thumbnail: omcover,
-    cardBackground: '#F6C0CE',
+    subtitle: "Homemade chilli oil branding and label design.",
+    thumbnail: co1,
+    cardBackground: '#FDE8ED',
 }
