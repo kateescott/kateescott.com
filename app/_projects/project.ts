@@ -5,6 +5,9 @@ import {talentLens} from "@/app/_projects/talent-lens";
 import {dataVisualisationLibrary} from "@/app/_projects/data-visualisation-library";
 import {learnMate} from "@/app/_projects/learn-mate";
 import {assaya} from "@/app/_projects/assaya";
+import {webinars} from "@/app/_projects/webinars";
+import {pullUpBanners} from "@/app/_projects/pull-up-banners";
+import {hotStuffChilliOil} from "@/app/_projects/hot-stuff-chilli-oil";
 import {hireHiddenGems} from "@/app/_projects/hire-hidden-gems";
 
 export type Project = {
@@ -23,6 +26,9 @@ const PROJECTS: { [key: string]: Project } = {
     'talent-lens': talentLens,
     'learn-mate': learnMate,
     'data-visualization-library': dataVisualisationLibrary,
+    'webinars': webinars,
+    'pull-up-banners': pullUpBanners,
+    'hot-stuff-chilli-oil': hotStuffChilliOil,
     'hire-hidden-gems': hireHiddenGems,
 }
 
