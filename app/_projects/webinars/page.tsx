@@ -10,6 +10,10 @@ import w7 from './assets/w7.png';
 import w8 from './assets/w8.png';
 import w9 from './assets/w9.png';
 import w10 from './assets/w10.png';
+import w11 from './assets/w11.png';
+import w12 from './assets/w12.png';
+import w13 from './assets/w13.png';
+import w14 from './assets/w14.png';
 
 
 import Image from 'next/image'
