@@ -265,6 +265,7 @@ function Page() {
 export const dataVisualisationLibrary: Project = {
     Page: Page,
     title: "Data Visualisation Library",
+    category: 'product-design',
     subtitle: "Empowering insights through dynamic data visualisations.",
     thumbnail: coverImg,
     cardBackground: '#008079',

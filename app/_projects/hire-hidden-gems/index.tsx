@@ -4,6 +4,7 @@ import hireHiddenGemImg1 from './assets/hhg1.png';
 
 export const hireHiddenGems: Project = {
     Page: Page,
+    category: "graphic-design",
     title: "Hire Hidden Gems 💎",
     subtitle: "Helping companies hire on merit, not background.",
     thumbnail: hireHiddenGemImg1,

@@ -230,6 +230,7 @@ function Page() {
 export const assaya: Project = {
     Page: Page,
     title: "Assaya's Collaboration with NGOs",
+    category: 'product-design',
     subtitle: "Preventing the spread of HIV/AIDS in remote Aboriginal communities.",
     thumbnail: assayadashboard,
     cardBackground: '#519F85'

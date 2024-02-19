@@ -25,14 +25,22 @@ export function Nav() {
     )
 }
 
+function isActive(href: string, path: string | undefined) {
+    if (!path) {
+        return
+    }
+    return href === '/' ? href === path : path.startsWith(href);
+}
 
-function MenuItem({href, children, ...props}: { href: string, children: React.ReactNode } & Partial<React.ComponentProps<typeof Link>>) {
+function MenuItem({href, children, ...props}: {
+    href: string,
+    children: React.ReactNode
+} & Partial<React.ComponentProps<typeof Link>>) {
     const path = usePathname();
-    const isSubpath = href === '/' ? href === path : path.startsWith(href);
 
     return (
         <Link href={href} className={classNames(styles.menubar__item, {
-            [styles.menubar__itemActive]: isSubpath
+            [styles.menubar__itemActive]: isActive(href, path)
         })} {...props}>{children}</Link>
     )
 }

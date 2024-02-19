@@ -1,8 +1,12 @@
 import {getProjectBySlug, getProjectSlugs} from "@/app/_projects/project";
 import {Metadata, ResolvingMetadata} from "next";
+import {notFound} from "next/navigation";
 
 export default function ProjectPage({params: {slug}}: { params: { slug: string } }) {
     const project = getProjectBySlug(slug);
+    if (!project) {
+        return notFound();
+    }
 
     return (
         <div>

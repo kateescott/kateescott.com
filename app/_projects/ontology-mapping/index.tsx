@@ -4,6 +4,7 @@ import omcover from './assets/omcover.png';
 
 export const ontologyMapping: Project = {
     Page: Page,
+    category: "product-design",
     title: "Ontology Mapping",
     subtitle: "Empowering insights through unified client data mapping.",
     thumbnail: omcover,

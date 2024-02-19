@@ -2,6 +2,14 @@ import styles from './project_grid.module.css';
 import Image, {StaticImageData} from "next/image";
 import {CSSProperties} from "react";
 
+export function ProjectsGridTitle({children}: { children: React.ReactNode }) {
+    return <h4 className={styles.projectsGridTitle}>{children}</h4>
+}
+
+export function ProjectsGridSection({children}: { children: React.ReactNode }) {
+    return <div className={styles.projectsGridSection}>{children}</div>
+}
+
 export function ProjectsGrid({children}: { children: React.ReactNode }) {
     return (
         <div className={styles.projectsGrid}>

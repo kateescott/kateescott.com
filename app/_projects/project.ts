@@ -13,6 +13,7 @@ import {hireHiddenGems} from "@/app/_projects/hire-hidden-gems";
 export type Project = {
     Page: React.ComponentType<{}>;
     title: string,
+    category: 'graphic-design' | 'product-design',
     subtitle: string,
     thumbnail: string | StaticImageData,
     cardBackground: `#${string}`,

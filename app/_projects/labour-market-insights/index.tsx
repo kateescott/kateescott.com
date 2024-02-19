@@ -212,6 +212,7 @@ function Page() {
 
 export const labourMarketInsights: Project = {
     Page: Page,
+    category: "product-design",
     title: "Labour Market Insights",
     subtitle: "Empowering informed policy decisions for a thriving workforce.",
     thumbnail: labourmarketinsights,

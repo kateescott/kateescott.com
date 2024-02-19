@@ -6,6 +6,16 @@
     grid-gap: 64px 32px;
 }
 
+.projectsGridTitle {
+    font-size: 24px;
+    color: black;
+    margin: 32px 0;
+}
+
+.projectsGridSection {
+    margin: 48px 0;
+}
+
 .gridItem {
     display: block;
     text-decoration: none;
@@ -14,7 +24,7 @@
 
 .info {
     text-align: left;
-    padding: 0 16px;
+    padding: 0;
     margin-top: 16px;
 }
 
@@ -57,7 +67,13 @@
 }
 
 @media screen and (max-width: 850px) {
+    .projectsGridSection {
+        margin: 32px 0;
 
+    }
+    .projectsGridTitle {
+        margin: 24px 0;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -67,6 +83,14 @@
     }
     .gridItem {
         margin-bottom: 48px;
+    }
+
+    .projectsGridSection {
+        margin: 24px 0;
+
+    }
+    .projectsGridTitle {
+        margin: 16px 0;
     }
 
 }
