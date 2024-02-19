@@ -8,7 +8,7 @@ export default function Home() {
             <div className="pageContent">
                 <Hero>
                     <h2>Hi, I’m Kate 👋</h2>
-                    <p>I’m a UX/UI Designer based in Sydney</p>
+                    <p>I’m a UX/UI and Graphic Designer based in Sydney</p>
                 </Hero>
             </div>
             <ProjectsGrid>
