@@ -28,7 +28,9 @@ export function Nav() {
 
 function MenuItem({href, children, ...props}: { href: string, children: React.ReactNode } & Partial<React.ComponentProps<typeof Link>>) {
     const path = usePathname();
-    const isSubpath = href === '/' ? href === path : path.startsWith(href);
+    const isSubpath = path != null
+        ? href === '/' ? href === path : path.startsWith(href)
+        : false;
 
     return (
         <Link href={href} className={classNames(styles.menubar__item, {
