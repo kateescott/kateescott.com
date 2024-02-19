@@ -31,7 +31,9 @@ export default function OntologyMappingProject() {
             </section>
             <section className={styles.section}>
                 <div className={styles.imageCard} style={{background: '#1B4C40'}}>
+                    <a href={hireHiddenGemImg5.src}>
                     <Image src={hireHiddenGemImg1} className={styles.image} alt="" placeholder="blur"/>
+                    </a>
                 </div>
             </section>
             <section className={styles.section}>

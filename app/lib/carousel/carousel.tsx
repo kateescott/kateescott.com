@@ -4,13 +4,18 @@ import {StaticImageData} from "next/image";
 import styles from './carousel.module.css';
 import Image from "next/image";
 import React, {useEffect, useRef} from "react";
-import {StaticImport} from "next/dist/shared/lib/get-img-props";
 import classNames from "classnames";
 
 
 export function Carousel({backgroundColor, items}: {
     backgroundColor?: string,
-    items: { src: StaticImageData, alt: string, backgroundColor?: string, caption?: string }[],
+    items: {
+        src: StaticImageData,
+        alt: string,
+        backgroundColor?: string,
+        caption?: string,
+        linkSrc?: StaticImageData
+    }[],
 }) {
 
     const scrollRef = useRef<HTMLDivElement>(null);
@@ -49,7 +54,7 @@ export function Carousel({backgroundColor, items}: {
         <div className={styles.carousel} style={{backgroundColor: currentItem?.backgroundColor ?? backgroundColor}}>
             <div className={styles.items} ref={scrollRef}>
                 {items.map((item, i) =>
-                    <CarouselItem key={i} src={item.src} alt={item.alt} caption={item.caption}/>)}
+                    <CarouselItem key={i} src={item.src} alt={item.alt} caption={item.caption} linkSrc={item.linkSrc}/>)}
             </div>
             <div className={styles.controlsLayer}>
                 {scrollPos > 0 && <button onClick={onPrev} className={styles.prev}>&larr;</button>}
@@ -123,11 +128,16 @@ export function TextCarousel({backgroundColor, items}: {
     )
 }
 
-export function CarouselItem({alt, src, caption}: { alt: string, src: StaticImageData, caption: string | undefined }) {
+export function CarouselItem({alt, src, caption, linkSrc}: {
+    alt: string,
+    src: StaticImageData,
+    caption: string | undefined,
+    linkSrc: StaticImageData | undefined
+}) {
     return (
         <div className={styles.item}>
             <div className={styles.itemImgContainer}>
-                <a href={src.src} target="_blank">
+                <a href={linkSrc?.src ?? src.src} target="_blank">
                     <Image className={styles.image} alt={alt} src={src} placeholder="blur"/>
                 </a>
             </div>

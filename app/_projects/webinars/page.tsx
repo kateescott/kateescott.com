@@ -52,7 +52,7 @@ export default function webinars() {
                     </p>
                 </div>
             </section>
-           
+
             <section className={styles.section}>
                 <Carousel backgroundColor="#D8E5E3" items={[
                     {src: w2, alt: ''},
@@ -62,16 +62,16 @@ export default function webinars() {
 
             <section className={styles.section}>
                 <Carousel backgroundColor="#D8E5E3" items={[
-                    {src: w4, alt: ''},
-                    {src: w5, alt: ''},
+                    {src: w4, alt: '', linkSrc: w11 },
+                    {src: w5, alt: '', linkSrc: w12 },
                 ]}/>
             </section>
-           
+
             <section className={styles.section}>
                 <div className={styles.text}>
                     <h4 className={styles.title}>Personality Assessment Webinar</h4>
                     <p>
-                    The creative assets developed for Vervoe's personality assessments webinar aimed to captivate and intrigue the audience with thought-provoking questions and visually compelling graphics. These assets successfully garnered attention on social media platforms, driving users to explore further and register for the event. 
+                    The creative assets developed for Vervoe's personality assessments webinar aimed to captivate and intrigue the audience with thought-provoking questions and visually compelling graphics. These assets successfully garnered attention on social media platforms, driving users to explore further and register for the event.
                     </p>
                     <p>
                     Additionally, catchy email subject lines drove engagement for the webinar, while a compelling landing page with dynamic visuals and clear messaging facilitated easy registration and participation.
@@ -79,7 +79,7 @@ export default function webinars() {
                 </div>
             </section>
 
-           
+
             <section className={styles.section}>
                 <Carousel backgroundColor="#E3EEF9" items={[
                     {src: w6, alt: ''},
@@ -89,11 +89,11 @@ export default function webinars() {
 
             <section className={styles.section}>
                 <Carousel backgroundColor="#E3EEF9" items={[
-                    {src: w8, alt: ''},
-                    {src: w9, alt: ''},
+                    {src: w8, alt: '', linkSrc: w13 },
+                    {src: w9, alt: '', linkSrc: w14 },
                 ]}/>
             </section>
-           
+
             <section className={styles.section}>
                 <div className={styles.text}>
                     <h4 className={styles.title}>Building High Performing Sales Teams Webinar</h4>
@@ -130,7 +130,7 @@ export default function webinars() {
                     </p>
                 </div>
             </section>
-           
+
 
         </ProjectLayout>
     );
