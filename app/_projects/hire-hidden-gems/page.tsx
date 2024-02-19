@@ -55,7 +55,7 @@ export default function OntologyMappingProject() {
                 <div className={styles.text}>
                     <h4 className={styles.title}>Objective</h4>
                     <p>
-                    The project aimed to showcase the platform's ability to uncover exceptional talent often overlooked in the traditional hiring process. Through compelling messaging and visuals, the campaign aimed to highlight Vervoe's unique value proposition and position it as the go-to solution for companies seeking top performers.
+                    The project aimed to showcase the platform&apos;s ability to uncover exceptional talent often overlooked in the traditional hiring process. Through compelling messaging and visuals, the campaign aimed to highlight Vervoe&apos;s unique value proposition and position it as the go-to solution for companies seeking top performers.
                     </p>
                 </div>
             </section>
@@ -70,10 +70,10 @@ export default function OntologyMappingProject() {
                 <div className={styles.text}>
                     <h4 className={styles.title}>Outcome</h4>
                     <p>
-                    The campaign exceeded expectations as companies and HR professionals embraced Vervoe's mission to prioritise merit in hiring. The message, paired with captivating visuals and clear messaging, significantly increased understanding and interest among our target audience. 
+                    The campaign exceeded expectations as companies and HR professionals embraced Vervoe&apos;s mission to prioritise merit in hiring. The message, paired with captivating visuals and clear messaging, significantly increased understanding and interest among our target audience.
                     </p>
                     <p>
-                    Additionally, the campaign effectively communicated Vervoe's unique value proposition, driving heightened awareness of its ability to unearth hidden talent through practical skills assessments. This clarity resulted in a substantial uptick in marketing-led inquiries and platform usage, validating the campaign's success in delivering tangible outcomes. 
+                    Additionally, the campaign effectively communicated Vervoe&apos;s unique value proposition, driving heightened awareness of its ability to unearth hidden talent through practical skills assessments. This clarity resulted in a substantial uptick in marketing-led inquiries and platform usage, validating the campaign&apos;s success in delivering tangible outcomes.
                     </p>
                 </div>
             </section>
@@ -89,7 +89,7 @@ export default function OntologyMappingProject() {
                 <div className={styles.text}>
                     <h4 className={styles.title}>Conclusion</h4>
                     <p>
-                    In conclusion, the campaign achieved its objective of positioning Vervoe as a leader in revolutionising the recruitment process. By emphasising merit-based hiring and leveraging compelling visuals, the campaign effectively differentiated Vervoe from traditional methods, driving increased awareness and engagement. The positive response from companies and HR professionals, coupled with the measurable increase in platform adoption, underscores the campaign's success in driving tangible outcomes. 
+                    In conclusion, the campaign achieved its objective of positioning Vervoe as a leader in revolutionising the recruitment process. By emphasising merit-based hiring and leveraging compelling visuals, the campaign effectively differentiated Vervoe from traditional methods, driving increased awareness and engagement. The positive response from companies and HR professionals, coupled with the measurable increase in platform adoption, underscores the campaign&apos;s success in driving tangible outcomes.
                     </p>
                     <p>
                     Looking forward, Vervoe is well-positioned to further disrupt the recruitment landscape, empowering companies to make more informed hiring decisions and unlock the full potential of their workforce. With a strong foundation established through this campaign, Vervoe is poised for continued growth and success in reshaping the future of talent acquisition.

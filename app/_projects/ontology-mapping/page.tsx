@@ -161,7 +161,7 @@ export default function OntologyMappingProject() {
             <section className={styles.section} style={{marginTop: '32px', marginBottom: '32px'}}>
                 <div className={classNames(styles.text, styles.highlight)} style={{paddingTop: '32px', paddingBottom: '32px' }}>
                     <p>
-                        &rdquo;How might we enable clients to quickly and efficiently access insights on and get value from our platform?&ldquo;
+                        “How might we enable clients to quickly and efficiently access insights on and get value from our platform?”
                     </p>
                 </div>
             </section>
