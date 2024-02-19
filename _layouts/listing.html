@@ -1,8 +1,0 @@
----
-layout: page
----
-
-{% assign items = site[page.collection_name] | sort: 'sort_order' | reverse | get_tiles %}
-
-{{ content }}
-{% include tiles.html items=items %}

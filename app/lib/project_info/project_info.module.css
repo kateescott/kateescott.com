@@ -1,0 +1,51 @@
+.projectInfo {
+    max-width: 700px;
+}
+
+.title {
+    font-size: 56px;
+    font-weight: 500;
+    color: #171717; /* Dark/90 */
+    margin: 8px 0;
+}
+
+.subtitle {
+    font-size: 24px;
+    font-weight: 400;
+    color: #171717; /* Dark/90 */
+    margin: 8px 0;
+}
+
+.description {
+    font-size: 20px;
+    font-weight: 400;
+    color: #676767;
+    margin-top: 56px;
+}
+
+.attributes {
+    display: flex;
+    margin-top: 64px;
+}
+
+.attributes * {
+    margin-right: 32px;
+    color: #676767;
+}
+
+.attributeLabel{
+    color: #171717; /* Dark/90 */
+}
+
+@media screen and (max-width: 600px) {
+    .title {
+        font-size: 32px;
+    }
+    .subtitle {
+        font-size: 20px;
+    }
+
+    .description {
+        font-size: 16px;
+    }
+}
