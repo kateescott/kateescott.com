@@ -5,6 +5,7 @@ import {talentLens} from "@/app/_projects/talent-lens";
 import {dataVisualisationLibrary} from "@/app/_projects/data-visualisation-library";
 import {learnMate} from "@/app/_projects/learn-mate";
 import {assaya} from "@/app/_projects/assaya";
+import {hireHiddenGems} from "@/app/_projects/hire-hidden-gems";
 
 export type Project = {
     Page: React.ComponentType<{}>;
@@ -22,6 +23,7 @@ const PROJECTS: { [key: string]: Project } = {
     'talent-lens': talentLens,
     'learn-mate': learnMate,
     'data-visualization-library': dataVisualisationLibrary,
+    'hire-hidden-gems': hireHiddenGems,
 }
 
 export function getProjectSlugs(): string[] {
